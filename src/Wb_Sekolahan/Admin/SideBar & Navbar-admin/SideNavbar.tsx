@@ -1,6 +1,6 @@
 import { Component, createSignal, JSX } from 'solid-js';
 import styles from './SideNavbar.module.css';
-import IconDashboardd from "../../Admin/AssetAdmin/iconDashboard.svg";
+import IconDashboard from "../AssetAdmin/icondidashboard.svg";
 import IconDataSiswa from '../../Admin/AssetAdmin/IconDataSiswa.svg';
 import IconEkstrakulikuler from '../../Admin/AssetAdmin/IconEkstrakulikuler.svg';
 import IconDataGuru from '../../Admin/AssetAdmin/IconDataGuru.svg';
@@ -29,7 +29,7 @@ const SideNavbar: Component = () => {
   const [activeItem, setActiveItem] = createSignal('Dashboard');
 
   const menuItems = [
-    { name: 'Dashboard', icon: IconDashboardd, activeIcon: IconDashboardWhite },
+    { name: 'Dashboard', icon: IconDashboard, activeIcon: IconDashboardWhite },
     { name: 'Data Siswa', icon: IconDataSiswa, activeIcon: IconDataSiswaWhite },
     { name: 'Ekstrakulikuler', icon: IconEkstrakulikuler, activeIcon: IconEkstrakulikulerWhite },
     { name: 'Data Guru', icon: IconDataGuru, activeIcon: IconDataGuruWhite },
