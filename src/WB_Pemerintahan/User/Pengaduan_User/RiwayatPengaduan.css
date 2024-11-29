@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+
+.riwayat-history-page {
+  padding: 20px;
+  max-width: 100vh;
+  margin: 0 auto;
+}
+
+.riwayat-reports-title {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: #3578e5;
+  /* Warna biru sebagai aksen utama */
+  font-size: 36px;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.riwayat-reports-p {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: #666;
+  /* Warna teks jika tidak ada laporan */
+}
+
+.riwayat-reports-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.riwayat-report-card {
+  background: #fff;
+  /* Latar belakang putih untuk kartu laporan */
+  border: 1px solid #ddd;
+  /* Border light */
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  /* Shadow ringan */
+  color: #000;
+  /* Warna teks hitam */
+}
+
+.riwayat-report-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.riwayat-report-header h3 {
+  margin: 0;
+  color: #3578e5;
+  /* Warna judul laporan biru */
+}
+
+.riwayat-report-description {
+  margin: 16px 0;
+  color: #333;
+  /* Warna teks deskripsi */
+}
+
+.riwayat-report-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.riwayat-report-location {
+  color: #555;
+  /* Warna lokasi */
+}
+
+.riwayat-report-status {
+  padding: 4px 8px;
+  margin-bottom: 12px;
+  background: #3578e5;
+  /* Background status biru */
+  color: #fff;
+  /* Teks status putih */
+  border-radius: 4px;
+  text-transform: capitalize;
+}
+
+.riwayat-report-attachment a {
+  color: #3578e5;
+  /* Warna link attachment biru */
+  text-decoration: none;
+}
+
+.riwayat-delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: red;
+  font-size: 1.2rem;
+}
+
+.riwayat-delete-button:hover {
+  color: darkred;
+}
+
+.riwayat-delete-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.riwayat-popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+.riwayat-popup-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.riwayat-popup-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.riwayat-popup-confirm {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.riwayat-popup-confirm:hover {
+  background-color: darkred;
+}
+
+.riwayat-popup-cancel {
+  background-color: #3578e5;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.riwayat-popup-cancel:hover {
+  background-color: #2b5cb8;
+}

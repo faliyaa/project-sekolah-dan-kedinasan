@@ -1,0 +1,188 @@
+.pageContainer {
+    display: flex;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  .mainContent {
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pengaduanContainer {
+    padding: 20px;
+    width: calc(100% - 350px);
+    max-width: 1200px;
+    margin: 80px auto 0 350px;
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+  
+  .pengaduanCard {
+    display: flex;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 25px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .pengaduanCard:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .gambarContainer {
+    flex: 0 0 250px;
+    margin-right: 25px;
+  }
+  
+  .gambarAduan {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .infoContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pengaduanInfo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .infoItem {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label {
+    font-weight: 600;
+    color: #555;
+    font-size: 0.95em;
+    margin-bottom: 4px;
+  }
+  
+  .value {
+    color: #333;
+    font-size: 1em;
+  }
+  
+  .statusContainer {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .statusButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e8e8ff;
+    border: none;
+    border-radius: 25px;
+    padding: 0 15px;
+    cursor: pointer;
+    width: 180px;
+    height: 45px;
+    font-size: 0.95em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .statusButton:hover {
+    background-color: #d8d8ff;
+  }
+  
+  .statusButton img {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .statusDropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 180px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    overflow: hidden;
+  }
+  
+  .statusDropdown div {
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .statusDropdown div:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .balasanContainer {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 25px;
+    padding: 8px 15px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .iconPesan {
+    margin-right: 12px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .balasanInput {
+    flex-grow: 1;
+    border: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 0.95em;
+    color: #333;
+  }
+  
+  .balasanInput::placeholder {
+    color: #999;
+  }
+  
+  .balasButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 0.95em;
+    margin-left: 12px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .balasButton:hover {
+    background-color: #45a049;
+  }
+  
+  .pengaduanContainer::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+  }
+  
+  .pengaduanContainer::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+  }
+  
+  .pengaduanContainer::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+  }

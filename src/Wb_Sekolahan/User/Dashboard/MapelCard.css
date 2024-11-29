@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+** {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Layout Grid untuk Cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Gaya untuk Kartu */
+.cardnew {
+    background-color: #fafafa;
+    border-radius: 10px;
+    width: 315px;
+    height: 270px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+}
+
+.grid h1 {
+    font-size: 24px;
+    font-weight: 600;
+    grid-column: 1 / span 2;
+}
+
+/* Gambar di bagian atas card */
+.card-image {
+    width: 315px;
+    height: 135px;
+    object-fit: cover;
+}
+
+/* Konten card */
+.card-content {
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    /* Mengatur agar elemen dalam header ditampilkan dalam satu baris */
+    align-items: center;
+    /* Menjaga agar gambar dan teks sejajar secara vertikal */
+}
+
+.header-icon {
+    width: 24px;
+    /* Atur lebar gambar sesuai kebutuhan */
+    height: 24px;
+    /* Atur tinggi gambar sesuai kebutuhan */
+    margin-right: 10px;
+    /* Menambahkan jarak antara gambar dan teks */
+}
+
+
+/* Gaya Header */
+.header {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 5px;
+    margin-top: -10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Gaya Title */
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+/* Gaya Progress Bar */
+.progressBarContainer {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 8px;
+    margin-bottom: 5px;
+}
+
+.progressBar {
+    background-color: #4a90e2;
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* Teks progress */
+.progressText {
+    font-size: 14px;
+    color: #6c757d;
+}

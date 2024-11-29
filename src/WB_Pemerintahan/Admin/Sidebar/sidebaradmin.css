@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.sidebar-admin {
+  position: fixed;
+  background-color: #ffffff;
+  border: 1px solid#DBDBDB;
+  width: 280px;
+  margin-top: 0px;
+  height: 100vh;
+  transition: width 0.3s ease;
+  z-index: 1;
+}
+
+.logo img {
+  height: 50px;
+  width: 58px;
+  margin-left: 25px;
+  margin-top: 26px;
+}
+
+.logo h1 {
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.logo p {
+  font-family: "Inter";
+  font-size: 11px;
+  font-weight: 500;
+  margin-top: 60px;
+  margin-left: -100px;
+}
+
+.searchbar {
+  margin-top: 25px;
+  margin-left: 22px;
+  border: 2px solid #ececec;
+  border-radius: 10px;
+  width: 248px;
+  height: 45px;
+}
+
+.searchbar img {
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: -20px;
+}
+
+.searchbar input {
+  margin-top: -60px;
+  font-family: "Inter", sans-serif;
+  margin-left: 50px;
+  font-size: 15px;
+  background-color: transparent;
+  width: 50px;
+  border: none;
+  outline: none;
+}
+
+.dashboard-sidebar {
+  margin-left: 0px;
+  margin-top: -7px;
+  cursor: pointer;
+}
+
+.dashboard-sidebar img {
+  margin-left: 22px;
+  margin-top: 55px;
+  margin-bottom: -23px;
+}
+
+.dashboard-sidebar h4 {
+  font-family: "Inter", sans-serif;
+  color: #bdbdbd;
+  font-size: 16px;
+  margin-left: 60px;
+}
+
+.kelolaprofil {
+  margin-top: -30px;
+  cursor: pointer;
+}
+
+.kelolaprofil img {
+  margin-left: 22px;
+  margin-top: 55px;
+  margin-bottom: -23px;
+}
+
+.kelolaprofil.local-profile-active h4 {
+  color: #000000 !important;
+  font-weight: 650;
+}
+
+.kelolaprofil.local-profile-active {
+  background-color: #edefff;
+  border-radius: 10px;
+  height: 42px;
+  width: 248px;
+  align-items: center;
+}
+
+.kelolaprofil h4 {
+  font-family: "Inter", sans-serif;
+  color: #bdbdbd;
+  font-size: 16px;
+  margin-left: 60px;
+}
+.kelolakonten {
+  margin-top: -30px;
+}
+
+.kelolakonten img {
+  margin-left: 22px;
+  margin-top: 55px;
+  margin-bottom: -23px;
+}
+
+.kelolakonten h4 {
+  font-family: "Inter", sans-serif;
+  color: #bdbdbd;
+  font-size: 16px;
+  margin-left: 60px;
+}
+
+.visimisi {
+  cursor: pointer;
+  margin-top: -30px;
+}
+
+.visimisi {
+  background-color: transparent;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.visimisi img {
+  margin-left: 7px;
+  margin-right: 10px;
+}
+
+.visimisi h4 {
+  margin-left: 5px;
+  font-size: 16px;
+  color: #bdbdbd;
+}
+.visimisi.local-government-active h4 {
+  color: #000000 !important;
+  font-weight: 650;
+}
+
+.visimisi.local-government-active {
+  background-color: #edefff;
+  border-radius: 10px;
+  margin-top: 15px;
+  height: 42px;
+  width: 248px;
+  margin-left: 16px;
+  margin-bottom: 10px;
+}
+.visimisi.visimisi.local-government-active img {
+  margin-left: -8px;
+}
+
+.info.news-announcement-active {
+  background-color: #edefff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 25px;
+  height: 42px;
+  width: 248px;
+  margin-left: 16px;
+  margin-bottom: 10px;
+}
+
+.info.info.news-announcement-active img {
+  margin-top: -8px;
+  margin-left: -8px;
+}
+.info.info.news-announcement-active h4 {
+  color: #000000 !important;
+  margin-left: 29px;
+  font-weight: 650;
+}
+.info {
+  cursor: pointer;
+}
+
+.line {
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: -122px;
+}
+
+.options {
+  margin-left: 50px;
+  margin-top: 48px;
+  padding: 10px;
+  font-family: "Inter", sans-serif;
+  color: #bdbdbd;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.options ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.options ul li {
+  padding: 10px 0;
+  margin-bottom: 0px;
+}
+
+.options ul li a {
+  text-decoration: none;
+  color: #bdbdbd;
+}
+
+.options ul li a:hover {
+  color: #007bff;
+}
+
+.datadaerah {
+  cursor: pointer;
+  margin-top: -15px;
+  margin-bottom: -5px;
+}
+
+.datadaerah img {
+  margin-left: 22px;
+  margin-top: 30px;
+  margin-bottom: -23px;
+}
+
+.datadaerah h4 {
+  font-family: "Inter", sans-serif;
+  color: #bdbdbd;
+  font-size: 16px;
+  margin-left: 60px;
+}
+
+.absensi,
+.pembelajaran {
+  cursor: pointer;
+}
+
+.info img {
+  margin-left: 22px;
+  margin-top: 30px;
+  margin-bottom: -23px;
+}
+
+.info h4 {
+  font-family: "Inter", sans-serif;
+  color: #bdbdbd;
+  font-size: 16px;
+  margin-left: 60px;
+}
+
+.absensi.active h4,
+.pembelajaran.active h4,
+.eskul.active h4 .transkrip h4 {
+  color: #000000;
+
+  font-weight: bold;
+}
+
+.aspirasi {
+  cursor: pointer;
+  margin-top: -5px;
+}
+
+.aspirasi img {
+  margin-left: 22px;
+  margin-top: 30px;
+  margin-bottom: -23px;
+}
+
+.aspirasi h4 {
+  font-family: "Inter", sans-serif;
+  color: #bdbdbd;
+  font-size: 16px;
+  margin-left: 60px;
+}
+
+.other h4 {
+  font-family: "Inter", sans-serif;
+  margin-top: 30px;
+  color: #646464;
+  font-size: 16px;
+  margin-left: 60px;
+}
+
+.setting img {
+  margin-left: 22px;
+  margin-top: 260px;
+  margin-bottom: -53px;
+}
+
+.setting h4 {
+  font-family: "Inter", sans-serif;
+  color: #bdbdbd;
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.logout img {
+  margin-left: 22px;
+  margin-top: 20px;
+  margin-bottom: -53px;
+}
+
+.logout h4 {
+  font-family: "Inter", sans-serif;
+  color: #ff3535;
+  font-size: 16px;
+  margin-left: 60px;
+}
+
+.other {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  padding-left: 22px;
+}
+
+.setting img,
+.logout img {
+  margin-left: 0;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.setting h4 {
+  margin-top: 8px;
+}
+
+.logout h4 {
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+.other div {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,242 @@
+.data-management {
+    padding: 1.5rem;
+    background-color: #f3f4f6;
+    min-height: 100vh;
+    width: 80vw;
+    margin-left:280px;
+  }
+  
+  header {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 75px;
+    margin-top: 100px;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .header-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s;
+  }
+  
+  button.add-data {
+    background-color: #14b8a531;
+    color: #00B69B;
+  }
+  
+  button.add-data:hover {
+    background-color: #0f766e;
+  }
+  
+  button.upload-file {
+    background-color:   #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 16px;
+    border: dashed 2px;
+  }
+  
+
+  
+  .data-table {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+    overflow-x: auto; /* Memungkinkan scroll ke samping */
+    margin-top: 1rem;
+    white-space: nowrap; /* Mencegah konten tabel terpotong, memaksanya menjadi satu baris */
+    scroll-behavior: smooth; 
+    
+  }
+  
+  .search-container {
+    padding: 1rem;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 0.875rem;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 0.75rem 1.5rem;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f9fafb;
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  td {
+    font-size: 0.875rem;
+    color: #374151;
+  }
+  
+  tr.even {
+    background-color: white;
+  }
+  
+  tr.odd {
+    background-color: #f9fafb;
+  }
+  
+  .status {
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  
+  .status.hidup {
+    background-color: #d1fae5;
+    color: #065f46;
+  }
+  
+  .status.wafat {
+    background-color: #fee2e2;
+    color: #991b1b;
+  }
+  
+  button.edit, button.delete {
+    font-size: 0.75rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  button.edit {
+    color: #4f46e5;
+    margin-right: 0.5rem;
+    background: aliceblue url('src/User/asset/edit-table.svg') no-repeat left center;
+    background-size: 16px 16px; /* Adjust size to fit the button */
+    border-radius: 10px;
+    padding-left: 24px; /* Add padding to make space for the icon */
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  button.edit:hover {
+    color: #4338ca;
+  }
+  
+  button.delete {
+    color: #dc2626;
+    background: rgba(255, 0, 0, 0.123) url('src/User/asset/garbage.svg') no-repeat left center;
+    background-size: 16px 16px; /* Adjust size to fit the button */
+    border-radius: 10px;
+    padding-left: 24px; /* Add padding to make space for the icon */
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  button.delete:hover {
+    color: #b91c1c;
+  }
+  
+  /* Adjust the padding for specific columns if needed */
+  th:nth-child(7), td:nth-child(7), /* Tanggal Wafat */
+  th:nth-child(17), td:nth-child(17) /* Nomor Telepon */ {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Responsive design for small screens */
+  @media (max-width: 768px) {
+    th, td {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+    }
+  
+    .header-buttons {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+ 
+  .import-file,.export-file {
+    border-radius: 16px;
+    border:  3px dashed #757575;
+    background-color: white;
+    font-size: small;
+    font-family: sans-serif,inherit;
+    background-image: url('src/User/asset/upload.svg')no-repeat center center;
+    color: #5c5d5d;
+    background-size: 16px 16px; /* Adjust size to fit the button */
+ 
+  }
+
+
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pagination button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #f3f4f6;
+    color: #374151;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  
+  .pagination button:hover:not(:disabled) {
+    background-color: #e5e7eb;
+  }
+  
+  .pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .pagination span {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
+  .pagination .prev {
+    margin-right: auto;
+  }
+  
+  .pagination .next {
+    margin-left: auto;
+  }

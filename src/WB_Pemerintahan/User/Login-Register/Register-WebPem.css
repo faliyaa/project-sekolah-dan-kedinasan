@@ -1,0 +1,374 @@
+body {
+  font-family: 'Inter', sans-serif; /* Mengatur font default */
+}
+
+.RegisterWebPem-container {
+  position: relative;
+  max-width: 950px;
+  height: 540px;
+  width: 100%;
+  background: #fff;
+  padding: 50px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin: 0 auto; 
+  margin-top: 60px;
+  display: flex;
+   border-radius: 10px;
+}
+
+.RegisterWebPem-cover {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 50%;
+  z-index: 98;
+  transition: all 1s ease;
+  backface-visibility: hidden;
+}
+
+.RegisterWebPem-cover img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 10;
+}
+
+.RegisterWebPem-cover .RegisterWebPem-text {
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.RegisterWebPem-cover .RegisterWebPem-text::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  background: #2961d9;
+  border-radius: 10px;
+}
+
+.RegisterWebPem-cover .RegisterWebPem-text .text-1 {
+  z-index: 20;
+  font-size: 26px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Bayangan teks */
+}
+
+.RegisterWebPem-forms {
+  height: 100%;
+  width: 100%;
+  margin-top: -30px;
+  background: #fff;
+}
+.RegisterWebPem-signup .title {
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px; /* Atur jarak bawah judul */
+  margin-left: -1px;
+}
+
+.title span {
+  color: #2961d9; 
+  font-weight: bold;
+  margin-top: 35px;
+  margin-left: -313px;
+}
+
+.RegisterWebPem-signup .input-box {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin: 15px 0; 
+  position: relative;
+}
+
+.RegisterWebPem-signup .input-box input {
+  height: 50px; 
+  width: 47%; 
+  outline: none; 
+  border: 1px solid rgba(0, 0, 0, 0.2); 
+  border-radius: 6px; 
+  padding: 0 36px; 
+  font-size: 14px;
+  font-weight: 400; 
+  transition: border-color 0.3s ease;
+}
+
+.RegisterWebPem-signup .input-box input:focus,
+.RegisterWebPem-signup .input-box input:valid {
+  border-color: #2961d9;
+}
+
+.RegisterWebPem-signup .input-box i {
+  position: absolute;
+  color: #777777;
+  font-size: 17px;
+  margin: 10px;
+}
+
+.RegisterWebPem-signup .input-box i.bx-show, 
+.RegisterWebPem-signup .input-box i.bx-hide {
+  left: 370px; /* Posisi ikon mata di sebelah kanan */
+}
+.RegisterWebPem-signup .text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin-right: 480px;
+}
+
+.RegisterWebPem-signup .text a {
+  text-decoration: none;
+}
+
+.RegisterWebPem-signup .text a:hover {
+  text-decoration: underline;
+}
+
+.RegisterWebPem-signup .button {
+  color: #fff;
+  margin-top: 40px;
+}
+
+.RegisterWebPem-signup .button input {
+  color: #fff;
+  background: #2961d9;
+  border-radius: 6px;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.RegisterWebPem-signup .button input:hover {
+  background: #2961d9;
+}
+
+.RegisterWebPem-signup label {
+  color: #2961d9;
+  cursor: pointer;
+}
+
+.RegisterWebPem-signup label:hover {
+  text-decoration: underline;
+}
+
+.RegisterWebPem-signup .sign-up-text {
+  text-align: center;
+  margin-top: 25px;
+}
+.button-RegisterWebPem {
+  display: flex;
+  margin-top: 20px; 
+}
+
+.button-RegisterWebPem input {
+  width: 47%;
+  color: #fff;
+  background: #2961d9; 
+  border: none; 
+  border-radius: 6px;
+  padding: 10px 20px; 
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+@media (max-width: 730px) {
+  .RegisterWebPem-cover {
+    display: none;
+  }
+
+  .RegisterWebPem-signup {
+    width: 100%;
+  }
+}
+
+/* Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Modern Popup */
+.modern-popup {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  animation: scaleIn 0.5s ease-out;
+}
+
+/* Success Animation */
+.success-animation {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 2rem;
+  position: relative;
+}
+
+.checkmark-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px solid #4CAF50;
+  position: relative;
+  animation: circle 0.6s ease-out;
+}
+
+.checkmark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25px;
+  height: 50px;
+  border-right: 3px solid #4CAF50;
+  border-bottom: 3px solid #4CAF50;
+  transform: rotate(45deg) translate(-50%, -50%);
+  transform-origin: left top;
+  animation: check 0.6s ease-out 0.3s forwards;
+}
+
+/* Popup Content */
+.popup-content h3 {
+  color: #333;
+  font-size: 1.8rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  background: linear-gradient(45deg, #2196F3, #4CAF50);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: slideUp 0.5s ease-out 0.3s both;
+}
+
+.popup-content p {
+  color: #666;
+  font-size: 1.1rem;
+  margin: 0;
+  margin-bottom: 1.5rem;
+  animation: slideUp 0.5s ease-out 0.4s both;
+}
+
+/* Loading Dots */
+.loading-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 1rem;
+}
+
+.loading-dots span {
+  width: 8px;
+  height: 8px;
+  background-color: #4CAF50;
+  border-radius: 50%;
+  animation: bounce 1.4s infinite ease-in-out;
+}
+
+.loading-dots span:nth-child(1) {
+  animation-delay: -0.32s;
+}
+
+.loading-dots span:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes circle {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+
+@keyframes check {
+  from { transform: rotate(45deg) scale(0); }
+  to { transform: rotate(45deg) scale(1); }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 80%, 100% { 
+    transform: scale(0);
+  }
+  40% { 
+    transform: scale(1);
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 480px) {
+  .modern-popup {
+    padding: 2rem;
+    width: 85%;
+  }
+
+  .success-animation {
+    width: 80px;
+    height: 80px;
+  }
+
+  .popup-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .popup-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Performance Optimization */
+.popup-overlay, .modern-popup {
+  will-change: transform, opacity;
+}

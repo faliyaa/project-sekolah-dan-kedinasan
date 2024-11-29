@@ -1,0 +1,84 @@
+/* navbar.css */
+.navbar-admin {
+    display: flex;
+    margin-top: 0px;
+    margin-left: 280px;
+    height: 91px;
+    width: calc(100% - 280px);
+    max-width: calc(100% - 280px);
+    min-width: 300px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 1000;
+    background-color: #FFFFFF;
+    position: fixed;
+    width: 1440px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #F2F4FA;
+    height: 45px;
+    width: 375px;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin-left: 550px;
+}
+
+input.search-input {
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    width: 200px;
+}
+.search-input:focus {
+    border: 2px solid #3498db; /* Contoh border saat fokus */
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.notif {
+    margin-left: 15px;
+    background-color: #F2F4FA;
+    border-radius: 250px;
+    width: 45px;
+    height: 45px;
+}
+
+.notif img {
+    margin-left: 11px;
+    margin-top: 10px;
+}
+.user-name {
+    font-size: 16px;
+    width: 100px;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.user-avatar {
+    width: 45px;
+    height: 45px;
+    background-color: #4a69ff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}

@@ -1,0 +1,148 @@
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-top: 70px;
+}
+
+.container {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  display: flex;
+  gap: 30px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+  .mapSection {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .mapContainer {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .mapTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px 0;
+    text-align: center;
+  }
+  
+  .visiMisiButton {
+    background-color: #5c6bc0;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-left: -280px;
+  }
+  
+  .visiMisiButton:hover {
+    background-color: #3f51b5;
+  }
+  
+  .descriptionSection {
+    width: 50%;
+  }
+  
+  .title {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .description p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+  
+  /* Popup styles */
+  .popup {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .popup h3 {
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .closeButton {
+    background-color: #002ffe;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+  }
+  
+  .closeButton:hover {
+    background-color: #4c4c4c;
+  }
+  
+  /* Override HERE Maps default styles */
+  :global(.H_ib_body) {
+    padding: 0 !important;
+  }
+  
+  :global(.H_ib_content) {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  :global(.H_ib_close) {
+    display: none !important;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+    }
+  
+    .mapSection,
+    .descriptionSection {
+      width: 100%;
+    }
+  
+    .mapContainer {
+      height: 300px;
+    }
+  }

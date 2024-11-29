@@ -1,0 +1,61 @@
+.ag-theme-alpine {
+    --ag-header-height: 48px;
+    --ag-header-foreground-color: #6B7280;
+    --ag-header-background-color: #F9FAFB;
+    --ag-header-cell-hover-background-color: #F3F4F6;
+    --ag-header-cell-moving-background-color: #F3F4F6;
+
+    --ag-row-height: 64px;
+    --ag-row-border-color: #E5E7EB;
+    --ag-row-hover-color: #F3F4F6;
+
+    --ag-cell-horizontal-padding: 1.5rem;
+    --ag-border-color: #E5E7EB;
+}
+
+.ag-theme-alpine .ag-header-cell {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.ag-theme-alpine .ag-cell {
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+}
+
+.ag-theme-alpine .ag-row-hover {
+    background-color: var(--ag-row-hover-color) !important;
+}
+
+.ag-theme-alpine {
+    position: relative;
+    /* Ensures grid is positioned correctly */
+    z-index: 1000;
+    /* Lower than the navbar and sidebar */
+    margin-top: 70px;
+    margin-left: 90px;
+}
+
+/* Additional styles to prevent overlap */
+.main-content {
+    position: relative;
+    z-index: 1100;
+    /* Between the navbar/sidebar and the grid */
+}
+/* DaftarEkstrakulikuler.css */
+
+.heading {
+    font-size: 32px; /* This corresponds to text-2xl */
+    font-weight: bold; /* This corresponds to font-bold */
+    color: #000000; /* This corresponds to text-gray-800 */
+    margin-bottom: -50px; /* This corresponds to mb-6 */
+    font-family: 'Inter';
+    margin-left: 90px;
+    position: relative;
+    margin-top: 80px;
+    z-index: 1200;
+  }
+  

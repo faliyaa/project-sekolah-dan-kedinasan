@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.schedule-container {
+    font-family: 'Inter', sans-serif;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.schedule-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.schedule-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: -20px;
+    border: none;
+}
+
+.view-all {
+    color: #007bff;
+    padding: 5px 12px;
+    border-radius: 10px;
+    background-color: #E2E9FB;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.day-schedule {
+    margin-bottom: 24px;
+    margin-bottom: 24px;
+    padding: 16px;
+    width: 270px;
+    /* Tambahkan border agar tiap hari terlihat terpisah */
+    border-radius: 8px;
+    /* Rounding untuk tampilan lebih halus */
+    background-color: #fff;
+    /* Background sedikit abu-abu untuk membedakan */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.day-schedule h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.schedule-item {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.time {
+    width: 100px;
+    font-size: 14px;
+    color: #555;
+}
+
+.subject-info {
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid #007bff;
+    padding-left: 12px;
+}
+
+.period {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 2px;
+}
+
+.subject {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.day-schedule:last-child {
+    margin-bottom: 0;
+}

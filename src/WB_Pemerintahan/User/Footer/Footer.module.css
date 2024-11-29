@@ -1,0 +1,95 @@
+.footer {
+  background-color: #3578e5;
+  color: white;
+  padding: 2rem 4rem;
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.links {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: 280px;
+
+}
+
+.sponsor{
+  margin-left: -380px;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.programs {
+  display: flex;
+  gap: 1rem;
+}
+
+.programs img {
+  height: 30px;
+  margin-top: 90px;
+}
+
+.address {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  margin-left: 300px;
+}
+
+.locationIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.socialIcons img {
+  width: 30px;
+  height: 30px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}

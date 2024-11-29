@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.content-government {
+    margin-top: 0px;
+    margin-left: 280px;
+    flex-grow: 1;
+    padding: 80px 30px 30px 80px ;
+    background-color: #ffffff;
+}
+
+.content-government h1 {
+    font-family: 'Inter';
+    margin-top: 45px;
+    font-weight: 800;
+    font-size: 26px;
+    margin-bottom: 23px;
+}
+
+.content-in-government h2 {
+    position: relative;
+    color: #003BD2;
+    margin-left: -655px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 23px;
+    margin-bottom: 15px;
+}
+.content-in-government p {
+    color: #000000;
+    font-size: 17px;
+    font-weight: 450;
+    text-align: left;
+    margin-bottom: 45px;
+}
+img.edit1 {
+    margin-left: 310px;
+    margin-top: -40px;
+    margin-bottom: 23px;
+}
+img.edit2 {
+    margin-left: 190px;
+    margin-top: -67px;
+    margin-bottom: 23px;
+}
+img.edit3 {
+    margin-left: 205px;
+    margin-top: -67px;
+    margin-bottom: 23px;
+}
+
+.mission {
+    margin-left: -145px;
+}
+img.edit4 {
+    margin-left: 807px;
+    margin-top: -228px;
+    margin-bottom: 0px;
+}
+img.edit5{
+    margin-left: 848px;
+    margin-top: 38px;
+    margin-bottom: 0px;
+}
+img.edit6 {
+    margin-left: 708px;
+    margin-top: 35px;
+    margin-bottom: 0px;
+}
+img.edit7 {
+    margin-left: 260px;
+    margin-top: -27px;
+    margin-bottom: 20px;
+}
+.government-structure {
+    margin-bottom: 50px;
+}
+
+.vision-mission {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+img.eye{
+    margin-left: -20px;
+    margin-bottom: -50px;
+}
+.vision h3 {
+    margin-left: 45px;
+    font-size: 22px;
+    font-weight: 600;
+}
+.vision p {
+    font-family: 'Inter';
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 45px;
+    text-align: left;
+}
+.mission img {
+    margin-left: -20px;
+    margin-bottom: -50px;
+}
+.mission h3 {
+    margin-left: 45px;
+    font-size: 22px;
+    font-weight: 600;
+}
+.mission ul li {
+    font-family: 'Inter';
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 45px;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: disc; 
+    margin-left: 0px; 
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px; 
+}
+
+.custom-input {
+    width: 100%;
+    padding: 0px;
+    margin-top: 5px;
+    border-radius: 4px;
+    font-size: 15px;
+    color: #000;
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.custom-input input {
+    border: none;
+}
+
+.custom-input::placeholder {
+    color: #888888; 
+}
+
+.custom-input:focus {
+    outline: none;
+}
+
+.vision,
+.mission {
+    width: 48%;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+.mission ul {
+    padding-left: 20px;
+}
+
+.mission li {
+    margin-bottom: 10px;
+}
+
+.upload-area {
+    position: relative;
+    width: 92%; /* Set to your desired width */
+    height: 433px; /* Set to your desired height */
+    border-radius: 14px;
+    border: 2px dashed #ccc; /* Style for upload area */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.upload-area img.uploaded-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+    position: absolute; /* Positioning to overlay on upload area */
+    top: 0;
+    left: 0;
+    z-index: 1; /* Make sure it's above the background */
+}
+
+
+
+.button-container-government {
+    display: flex; 
+    justify-content: flex-end; 
+    margin-top: 10px; 
+}
+
+.save-button-government {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    z-index: 10; 
+}
+
+.save-button-government:hover {
+    background-color: #0056b3;
+}
+
+.government-structure h2 {
+    font-family: 'Inter';
+    margin-left: -760px;
+    margin-bottom: -25px;
+    color: #003BD2;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+img.upload-icon {
+    margin-top: 0px;
+    margin-left: 40px;
+    height: 45px;
+    width: 45px;
+}
+
+.upload-area p {
+    color: #000000;
+    margin-top: -38px;
+    margin-left: 98px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.upload-area p:hover {
+    color: #000000;
+}
+.government-structure {
+    margin-top: 75px;
+    height: 433px; 
+    position: relative; 
+    width: 1020px; 
+}
+
+.background-image {
+    border-radius: 10px;
+    width: 1020px; 
+    height: 470px; 
+    object-fit: cover; 
+}

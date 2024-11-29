@@ -1,0 +1,385 @@
+body {
+  font-family: 'Inter', sans-serif; /* Mengatur font default */
+}
+
+.LoginWebPem-container {
+  position: relative;
+  max-width: 950px;
+  height: 500px;
+  width: 100%;
+  background: #fff;
+  padding: 30px 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  margin-top: 70px;
+  display: flex;
+  border-radius: 10px;
+}
+
+.LoginWebPem-cover {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 50%;
+  z-index: 98;
+  transition: all 1s ease;
+  backface-visibility: hidden;
+  border-radius: 0 10px 10px 0; /* Melengkungkan sisi kanan */
+}
+
+.LoginWebPem-cover img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 10;
+  border-radius: 0 10px 10px 0; /* Melengkungkan sisi kanan */
+}
+
+.LoginWebPem-cover .LoginWebPem-text {
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.LoginWebPem-cover .LoginWebPem-text::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  border-radius: 10px;
+  background: #2961d9;
+}
+
+.LoginWebPem-cover .LoginWebPem-text .text-1 {
+  z-index: 20;
+  font-size: 26px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Bayangan teks */
+}
+
+.LoginWebPem-forms {
+  height: 100%;
+  width: 50%;
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px 0 0 10px; /* Melengkungkan sisi kiri */
+}
+
+.LoginWebPem-signup .title {
+  position: relative;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-left: -1px;
+}
+
+.LoginWebPem-signup .input-boxes {
+  margin-top: 30px;
+}
+
+.LoginWebPem-signup .input-box {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin: 15px 0;
+  position: relative;
+}
+
+.LoginWebPem-signup .input-box input {
+  height: 50px;
+  width: 100%;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  padding: 0 40px;
+  font-size: 14px;
+  font-weight: 400;
+  transition: border-color 0.3s ease;
+}
+
+.LoginWebPem-signup .input-box input:focus,
+.LoginWebPem-signup .input-box input:valid {
+  border-color: #2961d9;
+}
+
+.LoginWebPem-signup .input-box i {
+  position: absolute;
+  color: #777777;
+  font-size: 17px;
+  margin: 10px;
+}
+
+.LoginWebPem-signup .input-box i.bx-show, 
+.LoginWebPem-signup .input-box i.bx-hide {
+  right: 10px; /* Posisi ikon mata di sebelah kanan */
+  cursor: pointer;
+}
+
+.LoginWebPem-signup .text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.LoginWebPem-signup .text a {
+  text-decoration: none;
+}
+
+.LoginWebPem-signup .text a:hover {
+  text-decoration: underline;
+}
+
+.LoginWebPem-signup .button-LoginWebPem {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.LoginWebPem-signup .button-LoginWebPem input {
+  width: 100%;
+  color: #fff;
+  background: #2961d9;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.LoginWebPem-signup .button-LoginWebPem input:hover {
+  background: #254ebe;
+}
+
+.LoginWebPem-signup .sign-in-text {
+  text-align: center;
+  margin-top: 25px;
+}
+.LoginWebPem-signup label {
+    color: #2961d9;
+    cursor: pointer;
+}
+@media (max-width: 730px) {
+  .LoginWebPem-cover {
+    display: none;
+  }
+
+  .LoginWebPem-forms {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-out;
+  backdrop-filter: blur(5px);
+}
+
+.modern-popup {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2.5rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: scaleIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  max-width: 400px;
+  width: 90%;
+}
+
+/* Checkmark Animation */
+.success-animation {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.checkmark-circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #4CAF50;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 6;
+  stroke: #4CAF50;
+  stroke-miterlimit: 10;
+  box-shadow: inset 0px 0px 0px #4CAF50;
+  animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+  position: relative;
+  margin: 0 auto;
+}
+
+.checkmark.draw::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+  background: #ffffff;
+  transform: scale(0);
+  animation: circle 0.5s ease-in-out forwards;
+}
+
+.checkmark.draw::before {
+  content: '';
+  width: 25px;
+  height: 50px;
+  border-right: 6px solid #4CAF50;
+  border-bottom: 6px solid #4CAF50;
+  position: absolute;
+  left: 40px;
+  top: 20px;
+  transform: rotate(45deg) scale(0);
+  animation: check 0.8s ease-in-out 0.3s forwards;
+}
+
+.popup-content h3 {
+  color: #333;
+  font-size: 1.8rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  background: linear-gradient(45deg, #2196F3, #4CAF50);
+  background-clip: text;
+  -webkit-background-clip: text; /* Untuk kompatibilitas dengan browser berbasis WebKit */
+  -webkit-text-fill-color: transparent; /* Membuat teks transparan untuk efek gradient */
+  animation: slideUp 0.5s ease-out 0.3s both;
+}
+
+
+.popup-content p {
+  color: #666;
+  font-size: 1.1rem;
+  margin: 0;
+  margin-bottom: 1.5rem;
+  animation: slideUp 0.5s ease-out 0.4s both;
+}
+
+/* Loading Dots */
+.loading-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 1rem;
+}
+
+.loading-dots span {
+  width: 8px;
+  height: 8px;
+  background-color: #4CAF50;
+  border-radius: 50%;
+  animation: bounce 1.4s infinite ease-in-out;
+}
+
+.loading-dots span:nth-child(1) {
+  animation-delay: -0.32s;
+}
+
+.loading-dots span:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes circle {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+
+@keyframes check {
+  from { transform: rotate(45deg) scale(0); }
+  to { transform: rotate(45deg) scale(1); }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 80%, 100% { 
+    transform: scale(0);
+  }
+  40% { 
+    transform: scale(1);
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 480px) {
+  .modern-popup {
+    padding: 2rem;
+    width: 85%;
+  }
+
+  .success-animation {
+    width: 80px;
+    height: 80px;
+  }
+
+  .popup-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .popup-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Untuk membuat popup lebih smooth */
+.popup-overlay, .modern-popup {
+  will-change: transform, opacity;
+}

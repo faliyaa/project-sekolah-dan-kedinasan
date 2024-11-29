@@ -1,0 +1,151 @@
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.profile-admin-dashboard {
+  display: flex;
+  height: 100vh;
+  background-color: #F5F6FA;
+}
+
+.profile-sidebar {
+  width: 250px;
+  background-color: #ffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-sidebar h1 {
+  margin-bottom: 30px;
+}
+
+.profile-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.profile-sidebar li {
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.profile-active {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.profile-sidebar-footer {
+  margin-top: auto;
+}
+
+main {
+  flex-grow: 1;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-user-info {
+  display: flex;
+  align-items: center;
+}
+
+.profile-notification {
+  background-color: #FF0000;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  margin-right: 10px;
+}
+
+.profile-language {
+  margin-right: 10px;
+}
+
+.profile-user-avatar {
+  background-color: #ccc;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.profile-profile-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.profile-profile-header {
+  height: 100px;
+  background: linear-gradient(to right, #9370DB, #FFA500, #FF6347);
+}
+
+.profile-profile-content {
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  background-color: #E6E6FA;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.profile-contact-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.profile-latest-activity {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.profile-activity-icon {
+  width: 20px;
+  height: 20px;
+  background-color: #E6E6FA;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-latest-activity ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.profile-latest-activity li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.profile-time {
+  color: #888;
+  font-size: 0.8em;
+}
+
+
+
+
+

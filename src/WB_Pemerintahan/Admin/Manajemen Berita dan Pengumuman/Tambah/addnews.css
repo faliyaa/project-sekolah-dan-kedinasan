@@ -1,0 +1,241 @@
+.add-news-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -100px;
+    padding: 50px 0px;
+    margin-top: -50px;
+    margin-left: 0px;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #F2F4FA;
+    font-family: 'Inter', sans-serif;
+}
+
+.back-button-news {
+    position: relative;
+    z-index: 20;
+    cursor: pointer;
+    margin-top: 140px;
+    margin-left: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.back-button-news h1 {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 35px;
+    color: rgba(0, 0, 0, 0.60);
+    font-family: 'Inter';
+}
+
+.back-button-news img {
+    margin-left: 45px;
+    margin-top: -20px;
+}
+
+.title-input-news img {
+    margin-left: 13px;
+    margin-top: 13px;
+    margin-bottom: -40px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.title-input-news {
+    cursor: pointer;
+    margin-top: 34px;
+    margin-left: 53px;
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    background-color: #EEEEEE;
+    border: 1px dashed #ced4da;
+}
+
+.uploaded-image-add {
+    width: 100%; /* Matches the width of the input */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 60px; /* Adjust as necessary */
+    object-fit: cover; /* Ensures the image covers the area */
+    border-radius: 15px; /* Matches the border radius */
+    position: absolute; /* Positioning to overlay on the title input */
+    top: 0;
+    left: 0;
+    z-index: 1; /* Ensure the image is below the label */
+}
+
+.title-input-news input {
+    font-size: 35px;
+    font-family: 'Inter';
+    font-weight: 450;
+    width: 800px;
+    background-color: transparent;
+    border: none !important;
+    margin-left: 70px;
+    margin-top: -10px;
+}
+.title-input-news input:focus {
+    outline: none;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.news-form {
+    width: 1000px;
+    height: 816px;
+    background-color: #fff;
+    margin-left: 220px;
+    border-radius: 10px;
+    padding: 20px; /* Kamu bisa menyesuaikan ini jika mempengaruhi lebar penuh */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative; 
+}
+
+.description-input-news {
+    margin-top: 100px;
+}
+
+.link-input-news {
+    cursor: pointer;
+    margin-left: 58px;
+    margin-top: -150px;
+    width: 573px;
+    height: 51px;
+    border-radius: 15px;
+    padding: 12px;
+    background-color: #EEEEEE;
+    border: 2px dashed #ced4da;
+}
+
+.link-input-news input {
+    color: #007bff;
+}
+
+.link-input-news input:focus {
+    outline: none;
+}
+
+.link-input-news img {
+    margin-left: 7px;
+    margin-top: -5px;
+    margin-bottom: -27px;
+    width: 51px;
+    height: 32px;
+    cursor: pointer;
+}
+
+
+.line-ns {
+    position: absolute;
+    /* Atur posisi absolut agar bisa diatur dalam .service-form */
+    top: 235px;
+    /* Letakkan di bagian atas */
+    left: 0;
+    /* Biarkan mulai dari tepi kiri */
+    width: 100%;
+    /* Pastikan lebar gambar 100% dari kontainer */
+    height: auto;
+    /* Jaga rasio aspek gambar */
+    z-index: 1;
+    /* Atur z-index agar berada di bawah elemen lain dalam .service-form */
+}
+
+.link-input-news-news input {
+    margin-left: 45px;
+    background-color: transparent;
+    outline: none;
+    /* Hilangkan border saat fokus */
+    border: none;
+}
+
+.description-input-news textarea {
+    margin-left: 55px;
+    font-size: 20px;
+    margin-top: -45px;
+}
+
+textarea {
+    background-color: transparent;
+    min-height: 200px;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.char-counter {
+    position: absolute;
+    top: 350px;
+    bottom: 100px;
+    right: 30px;
+    font-size: 16px;
+    color: #888;
+}
+
+
+.btn-action-news {
+    position: relative;
+    z-index: 5;
+    margin-top: -128px;
+    margin-left: 380px;
+}
+
+.cancel-btn-news,
+.save-btn-news {
+    width: 120px;
+    height: 49px;
+    padding: 10px 20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cancel-btn-news {
+    background-color: transparent;
+    border: 1px solid #D9D9D9;
+    color: #000000;
+}
+
+.save-btn-news {
+    margin-left: 27px;
+    background-color: #455EFF;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+}
+
+.source-input-news {
+    position: relative;
+}
+
+.hidden-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.input-url {
+    margin-top: 48px;
+    margin-left: 45px;
+    font-size: 25px;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+}
+
+.input-url:focus {
+    outline: none;
+}

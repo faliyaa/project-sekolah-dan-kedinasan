@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.card {
+    cursor: pointer;
+    width: 230px;
+    height: 267px;
+    margin-top: 40px;
+    margin-left: 275px;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    position: relative;
+    z-index: 1012;
+}
+
+.card2 {
+    cursor: pointer;
+    width: 230px;
+    height: 267px;
+    margin-top: 40px;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card3 {
+    cursor: pointer;
+    width: 230px;
+    height: 267px;
+    margin-top: 40px;
+    margin-left: -235px;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card4 {
+    cursor: pointer;
+    width: 230px;
+    height: 267px;
+    margin-top: 40px;
+    margin-left: 275px;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card5 {
+    cursor: pointer;
+    width: 230px;
+    height: 267px;
+    margin-top: 40px;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card6 {
+    cursor: pointer;
+    width: 230px;
+    height: 267px;
+    margin-top: 40px;
+    margin-left: -235px;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card7 {
+    cursor: pointer;
+    width: 230px;
+    height: 267px;
+    margin-top: 40px;
+    margin-left: 275px;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card8 {
+    cursor: pointer;
+    width: 230px;
+    height: 267px;
+    margin-top: 40px;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card9 {
+    cursor: pointer;
+    width: 230px;
+    height: 267px;
+    margin-top: 40px;
+    margin-left: -235px;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card9 img {
+    height: 170px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card8 img {
+    height: 170px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card7 img {
+    height: 170px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card6 img {
+    height: 170px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card5 img {
+    height: 170px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card4 img {
+    height: 170px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card3 img {
+    height: 170px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card2 img {
+    height: 170px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card img {
+    height: 170px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.calendar-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.calendar {
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title h2 {
+    margin-top: 95px;
+    margin-left: 280px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    position: relative;
+    z-index: 1009;
+}
+
+.card-in img {
+    width: 12px;
+    height: 12px;
+    margin-left: 15px;
+    margin-top: 12px;
+    margin-bottom: -14px;
+}
+
+.card-in p {
+    font-family: 'Inter', sans-serif;
+    color: #AEAEAE;
+    font-size: 12px;
+    margin-left: 35px;
+}
+
+.card-in h4 {
+    font-family: 'Inter', sans-serif;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0px;
+}
+
+.calendar-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -60px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    z-index: 1011;
+}
+
+.calendar {
+    font-family: 'Inter', sans-serif;
+    width: 340px;
+    height: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.right-side {
+    width: 360px;
+    height: 543px;
+    margin-left: 1100px;
+    border-radius: 10px;
+    margin-top: 390px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: -910px;
+    position: relative;
+    z-index: 1090;
+}
+
+.right-side h4 {
+    font-family: 'Inter', sans-serif;
+    color: #000000;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: -50px;
+    margin-left: 0px;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.right-side button {
+    margin-left: 200px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    background-color: rgba(0, 72, 255, 0.1);
+    color: #0048FF;
+    border-radius: 10px;
+    width: 100px;
+    height: 25px;
+    position: relative;
+    z-index: 2;
+}

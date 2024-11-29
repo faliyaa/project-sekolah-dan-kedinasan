@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Sidebar fixed on the left */
+.transcript-sidebar {
+    position: fixed;
+    z-index: 1000;
+}
+
+.transcript-container .sidebar {
+    position: fixed;
+    background-color: #FFFFFF;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 5px;
+}
+
+/* Navbar fixed on top */
+.transcript-navbar {
+    position: fixed;
+    top: 0;
+    left: 250px;
+    right: 0;
+    box-sizing: border-box;
+    z-index: 999;
+}
+
+.transcript-main {
+    margin-left: 250px;
+    margin-top: 60px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1001;
+}
+
+.transcript-container {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+.transcript-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.transcript-header h2 {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border: none;
+}
+
+.transcript-header .student-info {
+    font-size: 14px;
+    background-color: #E6F8F5;
+    color: #00B69B;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.transcript-main .grid-wrapper {
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    box-shadow: none;
+}
+
+.ag-theme-alpine {
+    height: 100%;
+    width: 200%;
+    font-size: 14px;
+    border-radius: 12px;
+    border: none;
+    /* Hapus border di container utama */
+    box-shadow: none;
+}
+
+/* Menghapus border pada header */
+.ag-theme-alpine .ag-header {
+    border: none;
+    /* Hapus border di header */
+}
+
+/* Menghapus border antara cells dan rows */
+.ag-theme-alpine .ag-row,
+.ag-theme-alpine .ag-cell {
+    border: none;
+    /* Hapus border antar baris dan sel */
+}
+
+/* Menghapus border bawah pada grid header */
+.ag-theme-alpine .ag-header-cell {
+    border-bottom: none;
+    /* Hapus border bawah header cell */
+}

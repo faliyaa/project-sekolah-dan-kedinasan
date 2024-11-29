@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+.penilaianSidebar {
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    margin-top: -90px;
+}
+.penilaian-container {
+    display: flex; /* Mengatur container untuk menggunakan flexbox */
+}
+.sidebar {
+    position: fixed;
+    background-color: #FFFFFF;
+    width: 100vw;
+    margin-top: 55px;
+    height: 100vh;
+    transition: width 0.3s ease;
+    z-index: 1;
+}
+
+/* Navbar fixed on top */
+.penilaianNavbar {
+    position: fixed;
+    z-index: 2;
+}
+
+.penilaianTugasContainer {
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    z-index: 10;
+    padding: 20px;
+    background-color: #fff;
+    margin-left: 250px;
+    margin-top: 60px;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1002;
+}
+
+.penilaianTaskSection {
+    margin-bottom: 30px;
+}
+
+.penilaianSectionTitle {
+    display: inline-block; /* Memastikan elemen tampil dalam satu baris */
+    font-size: 18px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 15px;
+}
+
+
+.penilaianTaskItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FAFAFA;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.penilaianTaskInfo {
+    display: flex;
+    align-items: center;
+}
+
+.penilaianTaskIcon {
+    font-size: 20px;
+    margin-right: 10px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.penilaianTaskTitle {
+    width: 500px;
+    font-weight: 500;
+    color: #111827;
+}
+
+.penilaianTaskDate {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.penilaianTaskStatus {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-size: 14px;
+    color: #6b7280;
+    margin-left: 300px;
+}
+
+.penilaianStatusBelumDinilai {
+    display: inline-block;
+    color: black;
+
+}
+
+.penilaianStatusIcon {
+    margin-left: 8px;
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+}
+
+.penilaianTaskScore {
+    font-size: 14px;
+    font-weight: 600;
+    color: #10b981;
+    background-color: #d1fae5;
+    padding: 4px 8px;
+    border-radius: 12px;
+}

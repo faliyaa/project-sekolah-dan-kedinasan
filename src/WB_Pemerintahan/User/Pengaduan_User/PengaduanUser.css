@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Navbar fix */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.pengaduan-form-page {
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pengaduan-form-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    margin-bottom: 10%;
+    margin-left: 17%;
+}
+
+/* Form Header */
+.pengaduan-form-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.pengaduan-form-header h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0;
+    color: #3578e5;
+}
+
+.pengaduan-form-header p {
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+.pengaduan-tooltip {
+    color: #3578e5;
+    text-decoration: none;
+    border-bottom: 1px dotted #3578e5;
+    cursor: pointer;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.label-pengaduan {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    color: black;
+}
+
+.label-pengaduan span {
+    color: red;
+}
+
+.input-pengaduan {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #333;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.input-pengaduan::placeholder {
+    color: #aaa;
+}
+
+.input-pengaduan:focus {
+    border-color: #3578e5;
+    outline: none;
+}
+
+/* Date input specific styles */
+.input-pengaduan[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    color: #333;
+    font-family: "Helvetica", arial, sans-serif;
+    font-size: 16px;
+    border: 1px solid #ecedee;
+    background: #fdfdfd;
+    padding: 5px;
+    display: inline-block !important;
+    visibility: visible !important;
+}
+
+.input-pengaduan[type="date"]:focus {
+    color: #333;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+.input-pengaduan[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 2px;
+    opacity: 0.6;
+    filter: invert(0.8);
+}
+
+.input-pengaduan[type="date"]::-webkit-calendar-picker-indicator:hover {
+    opacity: 1
+}
+
+/* File upload */
+.pengaduan-file-upload {
+    position: relative;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.pengaduan-file-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.pengaduan-file-upload label {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px dashed #3578e5;
+    border-radius: 10px;
+    background: #f0f2f5;
+    text-align: center;
+    color: #3578e5;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pengaduan-file-upload label:hover {
+    background-color: #e7f1ff;
+}
+
+/* Submit button */
+button[type="submit"] {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 10px;
+    background: #3578e5;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+    background: #285ea8;
+}
+
+/* Popup */
+.pengaduan-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.pengaduan-check-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.pengaduan-popup p {
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Illustration Card */
+.illustration-card {
+    background: linear-gradient(135deg, #3578e5 0%, #4a90e2 100%);
+    color: white;
+    text-align: center;
+    padding: 5rem 3rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.illustration-card::before,
+.illustration-card::after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    width: 200%;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: rotate(-5deg);
+}
+
+.illustration-card::before {
+    top: -50px;
+    left: -100px;
+    transform: rotate(10deg);
+}
+
+.illustration-card::after {
+    bottom: -50px;
+    right: -100px;
+    transform: rotate(-10deg);
+}
+
+.illustration-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.illustration-card h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.illustration-card p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.illustration-image {
+    width: 120px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.illustration-content h3 {
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+}
+
+.illustration-content p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Floating Button */
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #3578e5;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.floating-button:hover {
+    background-color: #2b5cb8;
+}
+
+.floating-button img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pengaduan-form-container {
+        padding: 1.5rem;
+        margin-left: 0;
+    }
+
+    .pengaduan-form-header h2 {
+        font-size: 24px;
+    }
+
+    .pengaduan-form-page {
+        margin-top: 70px;
+    }
+}

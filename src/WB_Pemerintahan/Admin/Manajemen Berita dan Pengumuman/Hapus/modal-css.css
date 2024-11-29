@@ -1,0 +1,58 @@
+.modal-confirm {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-confirm.open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content-confirm {
+  width: 628px;
+  height: 254px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 18px;
+  text-align: center;
+}
+.modal-content-confirm p {
+  margin-top: 58px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.modal-actions {
+  margin-top: 20px;
+}
+
+.modal-actions button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  width: 137px;
+  height: 54px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.batal-btn {
+  font-size: 18px;
+  font-weight: 450;
+  background-color: #f1f1f1;
+  color: #000000;
+}
+
+.hapus-btn {
+  font-size: 18px;
+  font-weight: 450;
+  background-color: rgba(255, 0, 0, 0.1);
+  color: #FF3535;
+}

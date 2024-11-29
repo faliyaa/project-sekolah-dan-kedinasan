@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.schedule .sidebar {
+  margin-top: -90px;
+}
+
+.schedule .navbar {
+  z-index: 2;
+}
+
+.schedule {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  
+  z-index: 10;
+  
+}
+
+.mainContent {
+  flex-grow: 1;
+  overflow-y: auto;
+  position: relative;
+  z-index: 5;
+  
+}
+
+.scheduleContainer {
+  position: relative;
+  margin-top: 40px;
+  left: 200px;
+  background-color: transparent;
+  z-index: 1003;
+  height: 616px;
+  border-radius: 15px;
+  width: 1050px;
+  padding: 20px;
+}
+
+.scheduleHeader {
+  padding: 0;
+  background-color: transparent;
+  margin-left: 0px;
+  margin-top: 1px;
+  z-index: 10;
+  
+}
+
+.headerContent {
+
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Inter';
+  font-weight: 800;
+  font-size: 26px;
+}
+
+.scheduleTitle {
+  font-size: 26px;
+  font-weight: bold;
+  margin-left: 55px;
+  margin-top: 48px;
+  color: #252525;
+}
+
+.scheduleControls {
+  display: flex;
+  margin-top: -40px;
+  margin-left: 900px;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+.scheduleSelect {
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 0.875rem;
+}
+
+.daySelect {
+  background-color: black;
+  color: white;
+}

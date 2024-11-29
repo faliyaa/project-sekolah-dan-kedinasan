@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --sidebar-navbar-color: #fff;
+    --sidebar-navbar-text-color: #AEAEAE;
+    --text-color: #050505;
+    --stroke: #ECECEC;
+    --card-color: #FAFAFA;
+    --secondary-text-color: #AEAEAE;
+    --white-color: #FFF;
+    --green-color: #00B69B;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    height: 60px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 255px;
+    z-index: 1090;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navbar-calendar-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.navbar-calendar {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+    background-color: var(--text-color);
+    border-radius: 10px;
+    color: var(--white-color);
+    padding: 5px 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    height: 38px;
+    padding: 8px 10px;
+}
+
+.navbar-button {
+    display: flex;
+    gap: 5px;
+    background-color: var(--white-color);
+    border: 1px solid var(--stroke);
+    padding: 6px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    height: 38px;
+}
+
+.navbar-arrow-icon {
+    margin-left: 5px;
+    width: 12px;
+    height: auto;
+}
+
+.navbar-icon-button {
+    background-color: var(--white-color);
+    border: 1px solid var(--stroke);
+    border-radius: 10px;
+    padding: 0 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    width: 38px;
+    height: 38px;
+}
+
+.navbar-icon-button img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Dropdown styling */
+.navbar-dropdown {
+    position: absolute;
+    top: 45px;
+    margin-left: -50px;
+    width: 160px;
+    background-color: var(--white-color);
+    border: 1px solid var(--stroke);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.navbar-dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.navbar-dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Right navigation */
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-username {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navbar-email {
+    font-size: 12px;
+    color: var(--secondary-text-color);
+}
+
+.navbar-major-label {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: var(--green-color);
+    margin-left: 10px;
+    background-color: hsla(171, 100%, 36%, 0.10);
+}
+
+.navbar-major-label p {
+    color: #00B69B;
+}
+
+.navbar-menu-container {
+    position: relative;
+    margin-left: 10px;
+}
+
+.navbar-dropdown-toggle {
+    background-color: var(--white-color);
+    border: 1px solid var(--stroke);
+    border-radius: 10px;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.navbar-dropdown {
+    position: absolute;
+    top: 45px;
+    /* Sesuaikan jika perlu */
+    right: 0;
+    width: 150px;
+    /* Sesuaikan jika perlu */
+    background-color: var(--white-color);
+    border: 1px solid var(--stroke);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.navbar-dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.navbar-dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+.navbar-user-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.navbar-user-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.navbar-search-container {
+    display: flex;
+    align-items: center;
+    height: 42px; /* Sesuaikan dengan tinggi navbar */
+    border: 1px solid var(--stroke);
+    border-radius: 10px;
+    overflow: hidden; /* Menghindari overflow pada border-radius */
+}
+
+.navbar-search-icon {
+    width: 16px; /* Atur ukuran ikon */
+    margin-left: 10px; /* Spasi antara ikon dan input */
+}
+
+.navbar-search-input {
+    height: 100%; /* Sesuaikan dengan tinggi kontainer */
+    padding: 0 10px; /* Spasi kiri dan kanan */
+    border: none; /* Menghilangkan border default */
+    outline: none; /* Menghilangkan outline saat fokus */
+    flex: 1; /* Mengisi ruang yang tersedia */
+}
+/* Ubah warna border saat fokus */

@@ -1,0 +1,478 @@
+.jp-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  margin-left: 265px;
+  margin-top: 50px;
+}
+
+.jp-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.jp-navbar-left,
+.jp-navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.jp-title {
+  font-size: 1.2rem;
+  margin-right: 2rem;
+}
+
+.jp-search-container {
+  margin-left: 200px;
+  position: relative;
+}
+
+.jp-search {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 60px;
+}
+
+.jp-language-selector {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.jp-flag-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
+
+.jp-user-info {
+  display: flex;
+  align-items: center;
+}
+
+.jp-user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.jp-user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.jp-user-name {
+  font-weight: bold;
+}
+
+.jp-user-role {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.jp-main-container {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.jp-sidebar {
+  width: 250px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: sticky;
+  top: 0;
+  height: calc(100vh - 50px);
+  overflow-y: auto;
+}
+
+.jp-sidebar-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.jp-sidebar-item {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s, padding 0.2s;
+}
+
+.jp-sidebar-item:hover {
+  background-color: #e9ecef;
+  padding-left: 1.5rem;
+}
+
+.jp-sidebar-item.jp-active {
+  background-color: #000;
+  color: #fff;
+}
+
+.jp-icon {
+  margin-right: 0.5rem;
+}
+
+.jp-logout {
+  color: #dc3545;
+}
+
+.jp-main-content {
+  flex-grow: 1;
+  padding: 2rem;
+  background-color: #F5F6FA;
+  overflow-y: auto;
+  height: calc(100vh - 50px);
+}
+
+.jp-page-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-left: 10px;
+}
+
+.jp-class-select-container {
+  margin-bottom: 2rem;
+  margin-left: 15px;
+}
+
+.jp-class-select {
+  padding: 0.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.jp-major-select {
+  padding: 0.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.jp-no-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+.jp-no-data-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+
+.jp-no-data-text {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.jp-subclass-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.jp-subclass-button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: white;
+  color: var(--primary-color, rgb(0, 0, 0));
+  border-radius: var(--border-radius, 8px);
+  cursor: pointer;
+  transition: all var(--transition-duration, 0.3s);
+  font-weight: bold;
+}
+
+.jp-subclass-button:hover {
+  background-color: var(--primary-color, #c3c9cf);
+  color: white;
+}
+
+.jp-subclass-active {
+  background-color: var(--primary-color, #ced4da);
+  color: white;
+  border-color: var(--primary-color, #ced4da);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.jp-schedule-container {
+  background-color: var(--card-background, #ffffff);
+  box-shadow: 0 4px 10px var(--card-shadow, rgba(0, 0, 0, 0.1));
+  border-radius: var(--border-radius, 8px);
+  padding: 20px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow-x: auto;
+  border: 1px solid #dee2e6;
+}
+
+.jp-schedule-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--primary-color, #000000);
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.jp-schedule-subtitle {
+  font-size: 16px;
+  color: #6c757d;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.jp-schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.jp-schedule-table th,
+.jp-schedule-table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #dee2e6;
+}
+
+.jp-schedule-table th {
+  background-color: var(--primary-color, #b5bec8);
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.jp-schedule-table td {
+  background-color: #f9f9f9;
+}
+
+.jp-schedule-table tr:nth-child(even) td {
+  background-color: #f4f4f9;
+}
+
+/* Overlay styles */
+.jp-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Popup container styles */
+.jp-edit-popup {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 90%;
+  animation: scaleIn 0.3s ease-out;
+}
+
+/* Popup header styles */
+.jp-edit-popup h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Time display styles */
+.jp-edit-popup p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Input field styles */
+.jp-edit-popup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #444;
+}
+
+.jp-edit-popup input {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.jp-edit-popup input:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+/* Button container styles */
+.jp-edit-popup-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+/* Button styles */
+.jp-edit-popup-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.jp-edit-popup-actions button:first-child {
+  background-color: #4CAF50;
+  color: white;
+  margin-right: 10px;
+}
+
+.jp-edit-popup-actions button:last-child {
+  background-color: #f44336;
+  color: white;
+}
+
+.jp-edit-popup-actions button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.jp-edit-popup-actions button:active {
+  transform: translateY(0);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* Custom AG-Grid Styles */
+.ag-theme-alpine {
+  --ag-row-height: 48px;
+  --ag-header-height: 56px;
+  --ag-cell-horizontal-padding: 15px;
+}
+
+.ag-header-cell-text {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.ag-cell {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.jp-edit-button {
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 10px 20px; /* Tambahkan padding untuk ukuran tombol */
+  background-color: var(--primary-color, #007bff); /* Warna latar belakang tombol */
+  color: white; /* Warna teks */
+  border: none; /* Hapus border default */
+  border-radius: var(--border-radius, 10px); /* Radius sudut */
+  cursor: pointer; /* Tunjukkan bahwa ini adalah tombol */
+  transition: background-color 0.3s; /* Transisi warna saat hover */
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .jp-schedule-container {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .jp-subclass-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .jp-schedule-title {
+    font-size: 20px;
+  }
+
+  .jp-schedule-subtitle {
+    font-size: 14px;
+  }
+
+  .jp-schedule-table th,
+  .jp-schedule-table td {
+    padding: 8px;
+  }
+
+  .jp-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .jp-search-container {
+    margin-left: 0;
+  }
+
+  .jp-sidebar {
+    width: 100%;
+    height: auto;
+  }
+
+  .jp-main-content {
+    padding: 1rem;
+    height: auto;
+  }
+
+  .jp-edit-popup {
+    padding: 20px;
+  }
+
+  .jp-edit-popup h3 {
+    font-size: 20px;
+  }
+
+  .jp-edit-popup p {
+    font-size: 16px;
+  }
+
+  .jp-edit-popup input {
+    font-size: 14px;
+  }
+
+  .jp-edit-popup-actions button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

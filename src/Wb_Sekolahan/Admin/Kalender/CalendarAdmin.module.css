@@ -1,0 +1,305 @@
+/* Container Styles */
+.calendar-container {
+  display: flex;
+  margin-left: 220px; /* Kalender mepet ke sidebar */
+  margin-top: 80px; /* Kalender lebih dekat dengan navbar */
+  padding: 20px;
+  position: relative;
+  z-index: 100; /* Ensure calendar is below sidebar and navbar */
+}
+
+.boxCalender {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px; /* Mengecilkan border radius */
+  overflow: hidden;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  height: 600px; /* Mengurangi tinggi */
+  width: 800px; /* Mengurangi lebar */
+  padding: 20px;
+}
+
+/* Main Calendar Styles */
+.calendar-main {
+  width: 100%;
+  padding: 2rem; /* Kurangi padding */
+}
+
+/* Header */
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.calendar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2d3748;
+  /* gray-800 */
+}
+
+.calendar-navigation {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-button {
+  padding: 0.5rem;
+  border-radius: 9999px;
+  background-color: #f7fafc;
+  /* gray-100 */
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #edf2f7;
+  /* gray-200 */
+}
+
+.edit-event-form {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f7fafc;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Calendar Grid */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1rem;
+}
+
+.calendar-day {
+  text-align: just;
+  font-weight: 600;
+  color: #718096;
+  /* gray-600 */
+}
+
+/* Day Cell */
+.day-cell {
+  padding: 0.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  height: 80px; /* Fix height */
+  width: 80px; /* Fix width */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; /* Centering content horizontally */
+}
+
+.day-cell .event-label {
+  text-align: center; /* Center text inside the box */
+}
+
+
+
+.day-cell:hover {
+  background-color: #f7fafc;
+  /* gray-100 */
+}
+
+/* Inactive Days */
+.day-cell.inactive {
+  color: #e2e8f0;
+  /* gray-300 */
+}
+
+/* Active Day */
+.day-cell.active {
+  background-color: #ebf8ff;
+  /* blue-100 */
+  font-weight: 600;
+}
+
+.day-cell.has-event {
+  background-color: #FFD700; /* Gold */
+}
+
+.event-label {
+  font-size: 0.75rem;
+  background-color: #4299e1;
+  /* blue-500 */
+  color: white;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.add-event-button {
+  padding: 0.5rem 1rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  position: absolute;
+  right: 190px; /* Pindahkan ke pojok kanan */
+  top: 90px; /* Tentukan jarak dari atas */
+  width: 320px;
+  height: 36px;
+  z-index: 200; /* Agar berada di atas konten lain */
+}
+
+.add-event-button:hover {
+  background-color: #282828; /* blue-700 */
+}
+
+/* Event List Sidebar */
+.event-sidebar {
+  width: 25%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-left: 10px;
+  margin-top: 20px; /* Menurunkan kotak lebih jauh */
+  max-height: 600px;
+  overflow-y: auto; /* Scroll vertikal untuk konten yang panjang */
+  overflow-x: auto; /* Scroll horizontal untuk konten yang melebar */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  white-space: nowrap; /* Membuat konten tidak turun ke baris baru untuk mengaktifkan scroll horizontal */
+}
+
+.event-sidebar-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #2d3748; /* gray-800 */
+  margin-bottom: 1rem;
+}
+
+.event-sidebar h3 {
+  font-family: "Inter";
+  font-weight: 600;
+}
+
+.event-card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  border-left: 5px solid #154ae8;
+  width: 100%; /* Ubah width menjadi 100% agar menyesuaikan dengan container */
+  margin-left: 0; /* Hilangkan margin kiri agar tidak terpotong */
+
+  /* Flexbox untuk center alignment */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 120px; /* Tentukan tinggi yang tetap untuk kotak */
+}
+
+.event-date {
+  font-size: 0.875rem;
+  color: #4299e1;
+  /* blue-500 */
+  font-weight: 600;
+}
+
+.event-title {
+  font-weight: bold;
+  color: #2d3748;
+  /* gray-800 */
+  margin-top: 0.25rem;
+}
+
+.event-description {
+  font-size: 0.875rem;
+  color: #718096;
+  /* gray-600 */
+  margin-top: 0.5rem;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* New modal styles for edit modal */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal h2 {
+  margin-top: 0;
+}
+
+.modal label {
+  display: block;
+  margin: 10px 0;
+}
+
+.modal input[type="text"],
+.modal textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal button {
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.modal button:last-child {
+  background-color: #6c757d;
+}
+
+.modal button:hover {
+  background-color: #0056b3;
+}
+
+.modal button:last-child:hover {
+  background-color: #5a6268;
+}

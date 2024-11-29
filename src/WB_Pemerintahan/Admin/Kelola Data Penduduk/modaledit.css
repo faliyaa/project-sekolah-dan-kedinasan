@@ -1,0 +1,96 @@
+.edit-resident-modal__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .edit-resident-modal__content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .edit-resident-modal__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .edit-resident-modal__form {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .edit-resident-modal__form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .edit-resident-modal__label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+    color: #555;
+  }
+  
+  .edit-resident-modal__input,
+  .edit-resident-modal__select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .edit-resident-modal__input:focus,
+  .edit-resident-modal__select:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+  }
+  
+  .edit-resident-modal__form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .edit-resident-modal__button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .edit-resident-modal__button--save {
+    background-color: #4a90e2;
+    color: white;
+  }
+  
+  .edit-resident-modal__button--save:hover {
+    background-color: #3a7bc8;
+  }
+  
+  .edit-resident-modal__button--cancel {
+    background-color: #e0e0e0;
+    color: #333;
+  }
+  
+  .edit-resident-modal__button--cancel:hover {
+    background-color: #d0d0d0;
+  }

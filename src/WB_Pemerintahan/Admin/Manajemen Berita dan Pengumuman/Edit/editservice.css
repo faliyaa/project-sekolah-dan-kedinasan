@@ -1,0 +1,271 @@
+.edit-service-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -100px;
+    padding: 50px 0px;
+    margin-top: -50px;
+    margin-left: 0px;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #F2F4FA;
+    font-family: 'Inter', sans-serif;
+}
+
+.back-button-edit-service {
+    position: relative;
+    z-index: 20;
+    cursor: pointer;
+    margin-top: 140px;
+    margin-left: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.back-button-edit-service h1 {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 35px;
+    color: rgba(0, 0, 0, 0.60);
+    font-family: 'Inter';
+}
+
+.back-button-edit-service img {
+    margin-left: 45px;
+    margin-top: -20px;
+}
+
+.title-edit-service img {
+    margin-left: 25px;
+    width: 138px;
+    height: 69px;
+    object-fit: cover;
+    /* Menjaga rasio aspek sambil memotong bagian yang berlebihan jika perlu */
+    border-radius: 8px;
+    /* Tambahkan sudut melengkung jika diinginkan */
+}
+
+.title-edit-service {
+    margin-top: 34px;
+    margin-left: 23px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+}
+
+.title-edit-service h1 {
+    font-size: 33px;
+    width: 800px;
+    font-family: 'Inter';
+    font-weight: 600;
+    background-color: transparent;
+    margin-top: 35px;
+    margin-left: 200px;
+}
+
+.title-edit-service input:focus {
+    outline: none;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.edit-service-form {
+    width: 1000px;
+    height: 816px;
+    background-color: #fff;
+    margin-left: 220px;
+    border-radius: 10px;
+    padding: 20px;
+    /* Kamu bisa menyesuaikan ini jika mempengaruhi lebar penuh */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.description-edit-service {
+    margin-top: 95px;
+    margin-left: 0px;
+}
+
+.description-edit-service textarea {
+    width: 500px;
+    margin-left: 55px;
+    font-size: 20px;
+    margin-top: -25px;
+}
+
+img.edit-img2 {
+    margin-top: -25px;
+    margin-bottom: -155px;
+    margin-left: 0px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.line-edit-service {
+    position: absolute;
+    /* Atur posisi absolut agar bisa diatur dalam .service-form */
+    top: 155px;
+    /* Letakkan di bagian atas */
+    left: 0;
+    /* Biarkan mulai dari tepi kiri */
+    width: 100%;
+    /* Pastikan lebar gambar 100% dari kontainer */
+    height: auto;
+    /* Jaga rasio aspek gambar */
+    z-index: 1;
+    /* Atur z-index agar berada di bawah elemen lain dalam .service-form */
+}
+
+.link-input-news-news input {
+    margin-left: 45px;
+    background-color: transparent;
+    outline: none;
+    /* Hilangkan border saat fokus */
+    border: none;
+}
+
+
+
+textarea {
+    background-color: transparent;
+    min-height: 200px;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.char-counter {
+    position: absolute;
+    top: 350px;
+    bottom: 100px;
+    right: 30px;
+    font-size: 16px;
+    color: #888;
+}
+
+
+.btn-action-edit-service {
+    position: relative;
+    z-index: 5;
+    margin-top: -128px;
+    margin-left: 380px;
+}
+
+.cancel-btn-service-edit,
+.save-btn-service-edit {
+    width: 120px;
+    height: 49px;
+    padding: 10px 20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cancel-btn-service-edit {
+    background-color: #D9D9D9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    color: #000000;
+}
+
+.save-btn-service-edit {
+    margin-left: 27px;
+    background-color: #0093FF;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    color: #000000;
+}
+
+.source-edit-service img {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 7px;
+    margin-bottom: -35px;
+}
+
+.source-edit-service {
+    height: 44px;
+    width: 208px;
+    border-radius: 8px;
+    background-color: #EEEEEE;
+    border: 1px rgba(0, 0, 0, 0.25) dashed;
+    margin-left: 55px;
+    margin-top: -90px;
+    position: relative;
+
+}
+
+.source-edit-service input {
+    margin-left: 35px;
+    margin-top: 2px;
+    font-size: 14px;
+}
+
+.source-edit-service ::placeholder {
+    font-size: 16px;
+    background-color: transparent;
+    color: #000000;
+}
+
+img.edit-url2 {
+    cursor: pointer;
+    margin-left: 190px;
+    margin-top: -50px;
+    width: 24px;
+    height: 24px;
+}
+
+.editable-title {
+    min-height: 40px;
+    font-size: 33px;
+    width: 800px;
+    font-family: 'Inter';
+    font-weight: 600;
+    background-color: transparent;
+    margin-top: 25px;
+    margin-left: 20px;
+    outline: none;
+    /* To remove the default focus outline */
+    color: #000000;
+    /* Ensures color matches other text */
+}
+
+
+#editable-heading {
+    outline: none;
+    padding: 0.5rem;
+}
+
+
+.hidden-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.edit-url-service {
+    background-color: transparent;
+    margin-top: 20px;
+    margin-left: 45px;
+    font-size: 25px;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+}
+
+.edit-url-service:focus {
+    outline: none;
+}

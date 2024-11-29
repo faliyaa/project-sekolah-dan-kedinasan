@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.sidebar{
+    position: fixed;
+    background-color: #fff;
+    width: 250px;
+    margin-top: 5px;
+    height: 100vh;
+    transition: width 0.3s ease;
+    z-index: 1;
+}
+.logo-sidebar img {
+    margin-left: 25px;
+    margin-top: 15px;
+    width: 120px;
+}
+
+.pembelajaran img {
+    margin-left: 22px;
+    margin-top: 55px;
+    margin-bottom: -23px;
+}
+.pembelajaran h4 {
+    font-family: 'Inter', sans-serif;
+    color: #646464;
+    font-size: 16px;
+    margin-left: 60px;
+}
+
+.transkrip {
+    cursor: pointer;
+}
+
+.sidebar-line {
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: -122px;
+}
+
+.sidebar-options {
+    margin-left: 40px;
+    margin-top: -35px;
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+    color: #646464;
+    font-size: 14px;
+    margin-bottom: -30px;
+}
+
+.sidebar-options ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+.sidebar-options ul li {
+    padding: 8px 0;
+}
+
+.sidebar-options ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar-options ul li a:hover {
+    color: #007bff;
+}
+
+.transkrip {
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+
+
+.transkrip img {
+    margin-left: 22px;
+    margin-top: 30px;
+    margin-bottom: -23px;
+}
+.transkrip h4 {
+    font-family: 'Inter', sans-serif;
+    color: #646464;
+    font-size: 16px;
+    margin-left: 60px;
+}
+.absensi, .pembelajaran {
+    cursor: pointer;
+}
+.absensi img {
+    margin-left: 22px;
+    margin-top: 30px;
+    margin-bottom: -23px;
+}
+.absensi h4 {
+    font-family: 'Inter', sans-serif;
+    color: #646464;
+    font-size: 16px;
+    margin-left: 60px;
+}
+
+.absensi.active h4,
+.pembelajaran.active h4,
+.eskul.active h4 
+.transkrip h4{
+    color: #000000; /* Color when active */
+    font-weight: bold; /* Bold text when active */
+}
+.eskul {
+    cursor: pointer;
+    margin-top: -5px;
+}
+.eskul img {
+    margin-left: 22px;
+    margin-top: 30px;
+    margin-bottom: -23px;
+}
+.eskul h4 {
+    font-family: 'Inter', sans-serif;
+    color: #646464;
+    font-size: 16px;
+    margin-left: 60px;
+}
+
+
+.setting img {
+    margin-left: 22px;
+    margin-top: 260px;
+    margin-bottom: -53px;
+}
+
+.setting h4 {
+    font-family: 'Inter', sans-serif;
+    color: #646464;
+    font-size: 16px;
+    margin-left: 20px;
+}
+.logout img {
+    margin-left: 22px;
+    margin-top: 20px;
+    margin-bottom: -53px;
+}
+
+.logout h4 {
+    font-family: 'Inter', sans-serif;
+    color: #FF3535;
+    font-size: 16px;
+    margin-left: 60px;
+}
+
+.other-sidebar {
+    position: absolute; 
+    left: 10; 
+    bottom: 40px;
+    padding-left: 22px; 
+}
+
+.setting img,
+.logout img {
+    margin-left: 0; 
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.setting h4 {
+    margin-top: 8px;
+}
+.logout h4 {
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+
+.other-sidebar div {
+    display: flex; 
+    align-items: center; 
+}
+
+.sidebar-menu{
+    margin-top: -690px;
+}

@@ -1,0 +1,372 @@
+/* Global styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F2F4FA;
+    color: #333;
+  }
+  
+  .pemerintah-daerah-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 50px;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo img:hover {
+    transform: scale(1.05);
+  }
+  
+  .logo span {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  nav {
+    display: flex;
+  }
+  
+  nav a {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #007bff;
+  }
+  
+  nav a i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+  }
+  
+  nav a.active {
+    color: #007bff;
+    border-bottom: 3px solid #007bff;
+  }
+  
+  .header-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar {
+    display: flex;
+    margin-right: 15px;
+  }
+  
+  .search-bar input {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px 0 0 20px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+  }
+  
+  .search-bar input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+  }
+  
+  .search-bar button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-bar button:hover {
+    background-color: #0056b3;
+  }
+  
+  .notification-button,
+  .profile-button {
+    background-color: transparent;
+    border: none;
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .notification-button:hover,
+  .profile-button:hover {
+    transform: scale(1.1);
+  }
+  
+  .profile-button {
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  /* Hero section styles */
+  .hero-image {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 5s ease;
+  }
+  
+  .hero-image:hover img {
+    transform: scale(1.1);
+  }
+  
+  .hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 2rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-weight: bold;
+  }
+  
+  .hero-content p {
+    font-size: 1.4rem;
+    max-width: 600px;
+    line-height: 1;
+  }
+  
+  /* Main content styles */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    flex-grow: 1;
+  }
+  
+  h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    color: #000;
+    text-align: center;
+  }
+  
+  .visi-misi-section {
+    margin-bottom: 4rem;
+  }
+  
+  .visi-misi-section {
+    margin-bottom: 4rem;
+  }
+  
+  .visi-misi-content {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    height: 400px; /* Fixed height */
+  }
+  
+  .visi, .misi {
+    flex: 1;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .visi:hover, .misi:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+  
+  .visi h3, .misi h3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: #000;
+  }
+  
+  .icon-image {
+    width: 32px;
+    height: 32px;
+    margin-right: 0.8rem;
+  }
+  
+  .content-container {
+    max-height: 280px; /* Adjust this value based on your needs */
+    overflow-y: auto;
+    padding-right: 1rem;
+    flex: 1;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+  }
+  
+  /* Webkit scrollbar styling */
+  .content-container::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .content-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+  }
+  
+  .content-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+  }
+  
+  .content-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  .misi ul {
+    padding-left: 1.8rem;
+    margin: 0;
+  }
+  
+  .misi li {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .struktur-pemerintahan img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-left: 30px;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #007bff;
+    color: white;
+    padding: 3rem 2rem;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .footer-logo img {
+    height: 60px;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0.8rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #cce5ff;
+  }
+  
+  .footer-address p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    padding-top: 2rem;
+  }
+  
+  .social-media a {
+    color: white;
+    margin-right: 1.5rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-media a:hover {
+    color: #cce5ff;
+  }
+  
+  .footer-apps img {
+    height: 40px;
+    margin-left: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .footer-apps img:hover {
+    transform: scale(1.1);
+  }
+  
+  .footer-bottom p {
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  

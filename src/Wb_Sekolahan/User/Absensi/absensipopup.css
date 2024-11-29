@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap');
+
+.attendance-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1100;
+}
+
+.attendance-popup-content {
+  background-color: white;
+  border-radius: 20px;
+  padding: 24px;
+  width: 900px;
+  height: 372px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.attendance-popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.attendance-popup-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.attendance-popup-date-selector {
+  position: relative;
+}
+
+.calendar-button {
+  margin-left: -260px;
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.calendar-options {
+  font-family: 'Inter';
+  font-size: 16px;
+    position: absolute;
+    background-color: white; 
+    border: 1px solid #ccc;
+    margin-left: -260px;
+    border-radius: 8px;
+    z-index: 1000; 
+    width: 210px; 
+  }
+  
+  .popup-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: opacity 0.3s ease;
+  }
+  
+  .calendar-option {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .calendar-option:hover {
+    background-color: #f0f0f0; 
+  }
+  
+
+.calendar-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.dropdown-arrow {
+  margin-left: 8px;
+}
+
+.calendar-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+.dropdown-icon {
+    margin-left: 10px;
+}
+
+.calendar-placeholder {
+  padding: 16px;
+  text-align: center;
+}
+
+.attendance-popup-class {
+  background-color: #E6FFFA;
+  color: #234E52;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.attendance-popup-student-info {
+    margin-top: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    color: #000000;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: -20px;
+    margin-left: -435px;
+    font-size: 14px;
+    gap: 70px; 
+}
+    
+
+.attendance-popup-options {
+  gap: 40px;
+  margin-left: 500px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.attendance-popup-option {
+  display: flex;
+  align-items: center;
+}
+
+.attendance-popup-option input[type="radio"] {
+  margin-right: 8px;
+}
+
+.attendance-popup-buttons {
+  margin-top: 175px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.attendance-popup-button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.attendance-popup-button-cancel {
+  background-color: #E2E8F0;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #4A5568;
+  margin-right: 8px;
+}
+
+.attendance-popup-button-cancel:hover {
+  background-color: #CBD5E0;
+}
+
+.attendance-popup-button-send {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #000000;
+  color: white;
+}
+
+.attendance-popup-button-send:hover {
+  background-color: #2D3748;
+}
