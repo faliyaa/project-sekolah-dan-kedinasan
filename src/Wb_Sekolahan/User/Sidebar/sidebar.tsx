@@ -4,7 +4,7 @@ import buku from '../img/dashboard.svg';
 import bukubold from '../img/bookbold.svg';
 import akademik from '../img/akademik.svg';
 import akademikbold from '../img/akademik-bold.svg'; // Ensure you have this bold version
-import logo from '../img/logo.svg';
+import logo from "../img/Logo.svg";
 import logout from '../img/logout.svg';
 import setting from '../img/setting.svg';
 import absensibold from '../img/absensi-bold.svg';
