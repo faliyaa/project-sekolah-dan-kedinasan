@@ -1,6 +1,6 @@
 import { Component, createSignal, JSX } from 'solid-js';
 import styles from './SideNavbar.module.css';
-import IconDashboard from '../../Admin/AssetAdmin/IconDashboard.svg';
+import IconDashboard from '../../Admin/AssetAdmin/iconDashboard.svg';
 import IconDataSiswa from '../../Admin/AssetAdmin/IconDataSiswa.svg';
 import IconEkstrakulikuler from '../../Admin/AssetAdmin/IconEkstrakulikuler.svg';
 import IconDataGuru from '../../Admin/AssetAdmin/IconDataGuru.svg';
