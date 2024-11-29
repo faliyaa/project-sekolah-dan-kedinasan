@@ -3,6 +3,11 @@ import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import './PemerintahDaerah.css';
 
+import asset1 from "../Assets/Bandung-Kota-bener.png";
+import asset2 from "../Assets/icons8-eye-24.png";
+import asset3 from "../Assets/rocket.png";
+import asset4 from "../Assets/Struktur-bandung-pemerintah.png"
+
 interface VisiMisi {
   id: number;
   visidanmisi: string;
@@ -48,7 +53,7 @@ const PemerintahDaerah: Component = () => {
       <Navbar />
 
       <div class="hero-image">
-        <img src="src\WB_Pemerintahan\User\Assets\Bandung Kota bener.png" alt="Gedung Sate Bandung" />
+        <img src={asset1} alt="Gedung Sate Bandung" />
         <div class="hero-content">
           <h1>Visi & Misi</h1>
           <p>Visi Misi Pemerintahan Bandung</p>
@@ -67,7 +72,7 @@ const PemerintahDaerah: Component = () => {
           <div class="visi-misi-content">
             <div class="visi">
               <h3>
-                <img src="src\WB_Pemerintahan\User\Assets\icons8-eye-24.png" alt="Visi Icon" class="icon-image" />
+                <img src={asset2} alt="Visi Icon" class="icon-image" />
                 Visi
               </h3>
               <div class="content-container">
@@ -76,7 +81,7 @@ const PemerintahDaerah: Component = () => {
             </div>
             <div class="misi">
               <h3>
-                <img src="src\WB_Pemerintahan\User\Assets\rocket.png" alt="Misi Icon" class="icon-image" />
+                <img src={asset3} alt="Misi Icon" class="icon-image" />
                 Misi
               </h3>
               <div class="content-container" innerHTML={visiMisiData()?.misi || 'Loading misi...'} />
@@ -93,7 +98,7 @@ const PemerintahDaerah: Component = () => {
             />
           ) : (
             <img 
-              src="src\WB_Pemerintahan\User\Assets\Struktur bandung pemerintah.png" 
+              src={asset4} 
               alt="Bagan Struktur Organisasi Pemerintah Kota Bandung 2021" 
             />
           )}

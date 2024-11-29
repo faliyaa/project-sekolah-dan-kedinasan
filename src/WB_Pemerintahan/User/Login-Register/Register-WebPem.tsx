@@ -3,6 +3,8 @@ import { onMount } from "solid-js";
 import "./Register-WebPem.css";
 import "boxicons/css/boxicons.min.css";
 
+import asset1 from "../../User/Assets/registerpemerintah.jpg";
+
 const SuccessPopup = (props) => {
   onMount(() => {
     // Set timeout untuk menutup popup dan redirect setelah 3 detik
@@ -95,7 +97,7 @@ function SignupForm() {
       <div class="RegisterWebPem-container">
         <div class="RegisterWebPem-cover">
           <div class="RegisterWebPem-front">
-            <img src="src/WB_Pemerintahan/User/Assets/registerpemerintah.jpg" alt="Cover Image" />
+            <img src={asset1} alt="Cover Image" />
             <div class="RegisterWebPem-text">
               <span class="text-1">
                 Website Resmi <br /> Pemerintah Kota Bandung

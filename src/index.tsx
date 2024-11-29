@@ -66,50 +66,48 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
 render(
   () => (
     <Router>
-      
+
       <Routes>
-      <Route path="/Dashboard-admin" element={<SideNavbar/>} />
-        <Route path="/admin" element={<App />} /> 
+        {/* PEMERINTAH */}
+        <Route path="/Dashboard-admin" element={<SideNavbar />} />
+        <Route path="/admin" element={<App />} />
+        <Route path="/ManajemenPemerintahDaerah-admin" element={<ManajemenPemerintahDaerah />} />
+        <Route path="/ManajemenBeritaPengumuman-admin" element={<ManajemenBeritaPengumuman />} />
+        <Route path="/ProfilDaerah-admin" element={<ManajemenProfilDaerah />} />
+        <Route path="/TambahBerita-admin" element={<TambahBerita />} />
+        <Route path="/TambahLayanan-admin" element={<TambahLayanan />} />
+        <Route path="/EditBerita-admin" element={<EditBerita />} />
+        <Route path="/EditLayanan-admin" element={<EditLayanan />} />
+        <Route path="/PemerintahDaerah-user" element={<PemerintahDaerah />} />
+        <Route path="/RegisterPemerintah" element={<RegisterPemerintah />} />
+        <Route path="/LoginPemerintah" element={<LoginPemerintah />} />
+        <Route path="/Dashboard-Pemerintahan" element={<Dashboard />} />
+        <Route path="/Footer" element={<Footer />} />
+        <Route path="/DetailBerita-user" element={<DetailBerita />} />
+        <Route path="/ProfileDaerah-user" element={<ProfileDaerah />} />
+        <Route path="/Pengaduan-user" element={<Pengaduan />} />
+        <Route path="/RiwayatPengaduan-user" element={<RiwayatPengaduan />} />
+        <Route path="/ManajemenPemerintahDaerah-admin" element={<ManajemenPemerintahDaerah />} />
+        <Route path="/DataPenduduk-admin" element={<DataPenduduk />} />
+        <Route path="/BantuanSosial-admin" element={<BantuanSosial />} />
+        <Route path="/Pengaduan-admin" element={<PengaduaAdmin />} />
+        <Route path="/ManagementSlider-admin" element={<ManagementSlider />} />
+        <Route path="/PopupInformasiTerbaru-admin" element={<PopupInformasiTerbaru />} />
+        <Route path="/PopupInformasiPopuler-admin" element={<PopupInformasiPopuler />} />
+        <Route path="/PopupDigitalService-admin" element={<DigitalServicesPopup />} />
 
-        <Route path="/ManajemenPemerintahDaerah-admin" element={<ManajemenPemerintahDaerah/>}/>
-        <Route path="/ManajemenBeritaPengumuman-admin" element={<ManajemenBeritaPengumuman/>}/>
-        <Route path="/ProfilDaerah-admin" element={<ManajemenProfilDaerah/>}/>
-        <Route path="/TambahBerita-admin" element={<TambahBerita/>}/>
-        <Route path="/TambahLayanan-admin" element={<TambahLayanan/>}/>
-        <Route path="/EditBerita-admin" element={<EditBerita/>}/>
-        <Route path="/EditLayanan-admin" element={<EditLayanan/>}/>
+
+      {/* SEKOLAH */}
+        <Route path="/Dashboard-user" element={<DashboardUser />} />
+        <Route path="/Absensi-user" element={<Absensi />} />
+        <Route path="/Kalender-user" element={<Penanggalan />} />
+        <Route path="/Jadwal-user" element={<Jadwal />} />
+        <Route path="/Penilaian&Tugas-user" element={<Tugas />} />
+        <Route path="/Materi-user" element={<Materi />} />
+        <Route path="/TranskripNilai-user" element={<TranscriptGrades />} />
+        <Route path="/MenuGuru" element={<MenuGuru />} />
 
 
-        <Route path="/Dashboard-user" element={<DashboardUser/>} />
-        <Route path="/Absensi-user" element={<Absensi/>} />
-        <Route path="/Kalender-user" element={<Penanggalan/>} />
-        <Route path="/Jadwal-user" element={<Jadwal/>} />
-        <Route path="/Penilaian&Tugas-user" element={<Tugas/>} />
-        <Route path="/Materi-user" element={<Materi/>}/>
-        <Route path="/TranskripNilai-user" element={<TranscriptGrades/>} />
-        <Route path="/TranskripNilai-user" element={<TranscriptGrades/>} />
-        <Route path="/PemerintahDaerah-user" element={<PemerintahDaerah/>} />
-        <Route path="/RegisterPemerintah" element={<RegisterPemerintah/>} />
-        <Route path="/LoginPemerintah" element={<LoginPemerintah/>} />
-
-        <Route path="/MenuGuru" element={<MenuGuru/>} />
-
-        <Route path="/Dashboard-Pemerintahan" element={<Dashboard/>}/>
-        <Route path="/Footer" element={<Footer/>}/>
-        <Route path="/DetailBerita-user" element={<DetailBerita/>}/>
-        <Route path="/ProfileDaerah-user" element={<ProfileDaerah/>} />
-        <Route path="/Pengaduan-user" element={<Pengaduan/>} />
-        <Route path="/RiwayatPengaduan-user" element={<RiwayatPengaduan/>} />
-
-        <Route path="/ManajemenPemerintahDaerah-admin" element={<ManajemenPemerintahDaerah/>}/>
-        <Route path="/DataPenduduk-admin" element={<DataPenduduk/>}/>
-        <Route path="/BantuanSosial-admin" element={<BantuanSosial/>}/>
-
-        <Route path="/Pengaduan-admin" element={<PengaduaAdmin/>}/>
-        <Route path="/ManagementSlider-admin" element={<ManagementSlider/>}/>
-        <Route path="/PopupInformasiTerbaru-admin" element={<PopupInformasiTerbaru/>}/>
-        <Route path="/PopupInformasiPopuler-admin" element={<PopupInformasiPopuler/>}/>
-        <Route path="/PopupDigitalService-admin" element={<DigitalServicesPopup/>}/>
       </Routes>
 
     </Router>

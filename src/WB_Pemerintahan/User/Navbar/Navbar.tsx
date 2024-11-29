@@ -2,6 +2,14 @@ import { Component, createSignal } from 'solid-js';
 import { useLocation } from '@solidjs/router';
 import './Navbar.css';
 
+import logo from "../../Aset_Pemerintahan/logo_bandung.svg";
+import asset1 from "../../Aset_Pemerintahan/Informasi&layanan.svg";
+import asset2 from "../../Aset_Pemerintahan/Profile.svg";
+import asset3 from "../../Aset_Pemerintahan/Pemerintahan.svg";
+import asset4 from "../../Aset_Pemerintahan/Pengaduan.svg";
+import asset5 from "../../Aset_Pemerintahan/notification.svg";
+
+
 const Navbar: Component = () => {
   const location = useLocation();
   const [activePage, setActivePage] = createSignal(location.pathname);
@@ -15,7 +23,7 @@ const Navbar: Component = () => {
   return (
     <header class="navbar">
       <div class="navbar-logo">
-        <img src="src\WB_Pemerintahan\Aset_Pemerintahan\logo_bandung.svg" alt="Logo Bandung" />
+        <img src={logo} alt="Logo Bandung" />
         <div class="navbar-title">
           <h1>Bandung</h1>
           <p>Portal Resmi Kota Bandung</p>
@@ -27,7 +35,7 @@ const Navbar: Component = () => {
           class={isActive('/DetailBerita-user') ? 'active' : ''}
           onClick={() => handleClick('/DetailBerita-user')}
         >
-          <img src="src\WB_Pemerintahan\Aset_Pemerintahan\Informasi&layanan.svg" alt="Informasi & Layanan" />
+          <img src={asset1} alt="Informasi & Layanan" />
           Informasi & Layanan
         </a>
         <a 
@@ -35,7 +43,7 @@ const Navbar: Component = () => {
           class={isActive('/ProfileDaerah-user') ? 'active' : ''}
           onClick={() => handleClick('/ProfileDaerah-user')}
         >
-          <img src="src\WB_Pemerintahan\Aset_Pemerintahan\Profile.svg" alt="Profil" />
+          <img src={asset2} alt="Profil" />
           Profil
         </a>
         <a 
@@ -43,7 +51,7 @@ const Navbar: Component = () => {
           class={isActive('/pemerintah') ? 'active' : ''}
           onClick={() => handleClick('/pemerintah')}
         >
-          <img src="src\WB_Pemerintahan\Aset_Pemerintahan\Pemerintahan.svg" alt="Pemerintah" />
+          <img src={asset3} alt="Pemerintah" />
           Pemerintah
         </a>
         <a 
@@ -51,13 +59,13 @@ const Navbar: Component = () => {
           class={isActive('/pengaduan') ? 'active' : ''}
           onClick={() => handleClick('/pengaduan')}
         >
-          <img src="src\WB_Pemerintahan\Aset_Pemerintahan\Pengaduan.svg" alt="Pengaduan" />
+          <img src={asset4} alt="Pengaduan" />
           Pengaduan
         </a>
       </nav>
       <div class="navbar-actions">
         <input type="text" placeholder="Cari sesuatu..." />
-        <img src="src\WB_Pemerintahan\Aset_Pemerintahan\notification.svg" alt="Notifikasi" />
+        <img src={asset5} alt="Notifikasi" />
         <div class="navbar-profile">
           <span>S</span>
         </div>

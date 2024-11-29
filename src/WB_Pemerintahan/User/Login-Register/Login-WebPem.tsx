@@ -2,6 +2,9 @@ import { createSignal, Show } from "solid-js";
 import "./Login-WebPem.css";
 import "boxicons/css/boxicons.min.css";
 
+import asset1 from "../../User/Assets/registerpemerintah.jpg";
+
+
 function LoginForm() {
   const [email, setEmail] = createSignal("");
   const [password, setPassword] = createSignal("");
@@ -73,7 +76,7 @@ function LoginForm() {
 
       <div class="LoginWebPem-cover">
         <div class="LoginWebPem-front">
-          <img src="src/WB_Pemerintahan/User/Assets/registerpemerintah.jpg" alt="Cover Image" />
+          <img src={asset1} alt="Cover Image" />
           <div class="LoginWebPem-text">
             <span class="text-1">
               Website Resmi <br /> Pemerintah Kota Bandung

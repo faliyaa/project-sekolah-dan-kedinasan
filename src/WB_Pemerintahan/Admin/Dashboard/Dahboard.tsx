@@ -8,6 +8,10 @@ import ChartUmur from './chartkecil/chartumur';
 import ChartPekerjan from './chartbesar/datapekerjaan';
 import ChartPendidkan from './chartbesar/datapendidikan'
 
+import kuburan from "../Assets/kuburan.png";
+import pediatricts from "../Assets/pediatrics.png";
+import people from "../Assets/people.png";
+
 const Dashboard = () => {
     return (
         <div>
@@ -17,17 +21,17 @@ const Dashboard = () => {
                 <h1 class={styles.title}>Dashboard</h1>
                 <div class={styles.gridchart1}>
                 <div class={styles.widget}>
-        <img src="src/WB_Pemerintahan/Admin/Assets/kuburan.png" alt="Jumlah Kematian Icon" class={styles.icon} />
+        <img src={kuburan} alt="Jumlah Kematian Icon" class={styles.icon} />
         <div class={styles.widgetNumber} style={{ color: '#e74c3c' }}>123</div> {/* Example value */}
         <div class={styles.widgetText}>Jumlah Kematian</div>
     </div>
     <div class={styles.widget}>
-        <img src="src/WB_Pemerintahan/Admin/Assets/pediatrics.png" alt="Jumlah Kelahiran Icon" class={styles.icon} />
+        <img src={pediatricts} alt="Jumlah Kelahiran Icon" class={styles.icon} />
         <div class={styles.widgetNumber} style={{ color: '#2ecc71' }}>456</div> {/* Example value */}
         <div class={styles.widgetText}>Jumlah Kelahiran</div>
     </div>
     <div class={styles.widget}>
-        <img src="src/WB_Pemerintahan/Admin/Assets/people.png" alt="Total Penduduk Icon" class={styles.icon} />
+        <img src={people} alt="Total Penduduk Icon" class={styles.icon} />
         <div class={styles.widgetNumber} style={{ color: '#3498db' }}>789</div> {/* Example value */}
         <div class={styles.widgetText}>Total Penduduk</div>
     </div>
