@@ -1,26 +1,26 @@
 import { Component, createSignal, JSX } from 'solid-js';
 import styles from './SideNavbar.module.css';
 import IconDashboard from "../AssetAdmin/icondidashboard.svg";
-import IconDataSiswa from '../../Admin/AssetAdmin/IconDataSiswa.svg';
-import IconEkstrakulikuler from '../../Admin/AssetAdmin/IconEkstrakulikuler.svg';
-import IconDataGuru from '../../Admin/AssetAdmin/IconDataGuru.svg';
-import IconTranskripNilai from '../../Admin/AssetAdmin/IconTranskripNilai.svg';
-import IconKalender from '../../Admin/AssetAdmin/iconKalender.svg'
-import IconPengaturan from '../../Admin/AssetAdmin/IconPengaturan.svg';
-import IconKeluar from '../../Admin/AssetAdmin/IconKeluar.svg';
-import IconJadwalPelajaran from '../../Admin/AssetAdmin/IconJadwalPelajaran.svg';
-import IconDashboardWhite from '../../Admin/AssetAdmin/IconDashboard-White.svg';
-import IconDataSiswaWhite from '../../Admin/AssetAdmin/IconDataSiswa-White.svg';
-import IconEkstrakulikulerWhite from '../../Admin/AssetAdmin/IconEkstrakulikuler-White.svg';
-import IconDataGuruWhite from '../../Admin/AssetAdmin/IconDataGuru-White.svg';
-import IconTranskripNilaiWhite from '../../Admin/AssetAdmin/iconTranskripNilai-White.svg';
-import IconJadwalPelajaranWhite from '../../Admin/AssetAdmin/iconJadwalPelajaran-White.svg';
-import IconKalenderWhite from '../../Admin/AssetAdmin/iconKalender-White.svg'
+import IconDataSiswa from "../AssetAdmin/iconDataSiswa.svg";
+import IconEkstrakulikuler from "../AssetAdmin/iconEkstrakulikuler.svg";
+import IconDataGuru from "../AssetAdmin/iconDataGuru.svg";
+import IconTranskripNilai from "../AssetAdmin/iconTranskripNilai.svg";
+import IconKalender from "../AssetAdmin/iconKalender.svg"
+import IconPengaturan from "../AssetAdmin/iconPengaturan.svg";
+import IconKeluar from "../AssetAdmin/iconKeluar.svg";
+import IconJadwalPelajaran from "../AssetAdmin/iconJadwalPelajaran.svg";
+import IconDashboardWhite from "../AssetAdmin/iconDashboard-White.svg";
+import IconDataSiswaWhite from "../AssetAdmin/iconDataSiswa-White.svg";
+import IconEkstrakulikulerWhite from "../AssetAdmin/iconEkstrakulikuler-White.svg";
+import IconDataGuruWhite from "../AssetAdmin/iconDataGuru-White.svg"
+import IconTranskripNilaiWhite from "../AssetAdmin/iconTranskripNilai-White.svg";
+import IconJadwalPelajaranWhite from "../AssetAdmin/iconJadwalPelajaran-White.svg";
+import IconKalenderWhite from "../AssetAdmin/iconKalender-White.svg";
 import TranskripNilai from '../TranskripNilai-admin/TranskripNilai';
 import Dashboard from '../Dashboard/Dashboard-admin';
 import DataEkstrakulikuler from '../Data Ekstrakulikuler/DataEkstrakulikuler';
 import DataGuru from '../Data Guru/DataGuru';
-import Kalender from '../Kalender/CalendarAdmin';
+// import Kalender from '../Kalender/CalendarAdmin';
 import { DataSiswa } from '../Data Siswa/DataSiswa';
 import JadwalPelajaran from '../Jadwal Pelajaran/JadwalPelajaran';
 import CalendarAdmin from '../Kalender/CalendarAdmin';
