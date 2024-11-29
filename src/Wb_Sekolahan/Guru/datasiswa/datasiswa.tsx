@@ -2,6 +2,8 @@ import { createSignal } from "solid-js";
 import { useNavigate } from "@solidjs/router";
 import './datasiswa.css';
 
+import user from "../assetGuru/user.svg";
+
 function DataKelas(props) {
   const [selectedClass, setSelectedClass] = createSignal("Kelas : X");
   const navigate = useNavigate();
@@ -66,7 +68,8 @@ function DataKelas(props) {
                 <div class="text-content">
                   <h2>{card.name}</h2>
                   <div class="icon-number">
-                    <img src="\src\asset2\user.svg" alt="Logo" class="iconnumber" />
+                    <img src={user} alt="Logo" class="iconnumber" />
+        
                     <span class="number">{card.absensi}</span>
                   </div>
                 </div>

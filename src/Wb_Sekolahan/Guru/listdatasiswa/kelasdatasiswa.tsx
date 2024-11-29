@@ -1,6 +1,8 @@
 import { createSignal } from "solid-js";
 import './kelasdatasiswa.css';
 
+import user from "../assetGuru/user.svg";
+
 function DataKelas(props) {
   const [selectedClass, setSelectedClass] = createSignal("Kelas : X");
 
@@ -60,7 +62,7 @@ function DataKelas(props) {
                   <h2>{card.name}</h2>
                 </div>
                 <div class="icon-numberSiswa">
-                  <img src="\src\asset2\user.svg" alt="Logo" class="iconnumber" />
+                  <img src={user} alt="Logo" class="iconnumber" />
                   <span class="number">{card.absensi}</span>
                 </div>
               </div>
