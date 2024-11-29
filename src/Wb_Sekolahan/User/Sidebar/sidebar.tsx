@@ -4,7 +4,7 @@ import buku from '../img/dashboard.svg';
 import bukubold from '../img/bookbold.svg';
 import akademik from '../img/akademik.svg';
 import akademikbold from '../img/akademik-bold.svg'; // Ensure you have this bold version
-import logo from "../img/Logo.svg";
+import logoo from "../img/logogogo.svg";
 import logout from '../img/logout.svg';
 import setting from '../img/setting.svg';
 import absensibold from '../img/absensi-bold.svg';
@@ -64,7 +64,7 @@ const Sidebar = () => {
   return (
     <div class="sidebar">
       <div class="logo-sidebar">
-        <img src={logo} alt="Logo" />
+        <img src={logoo} alt="Logo" />
       </div>
       <div class="sidebar-content">
         <div class="sidebar-menu">
